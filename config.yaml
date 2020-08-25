@@ -1,5 +1,6 @@
 baseURL : "https://hossainlab.github.io/jhossain.me/"
 publishDir: docs
+staticDir: static 
 languageCode: en-us
 title: "Jubayer Hossain"
 theme: "toha"

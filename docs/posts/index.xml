@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Jubayer Hossain</title>
-    <link>https://github.com/hossainlab/jhossain.me/posts/</link>
+    <link>https://hossainlab.github.io/jhossain.me/posts/</link>
     <description>Recent content in Posts on Jubayer Hossain</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 08 Jun 2020 08:59:13 +0600</lastBuildDate>
     
-	<atom:link href="https://github.com/hossainlab/jhossain.me/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hossainlab.github.io/jhossain.me/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Features</title>
-      <link>https://github.com/hossainlab/jhossain.me/posts/features/</link>
+      <link>https://hossainlab.github.io/jhossain.me/posts/features/</link>
       <pubDate>Mon, 08 Jun 2020 08:59:13 +0600</pubDate>
       
-      <guid>https://github.com/hossainlab/jhossain.me/posts/features/</guid>
+      <guid>https://hossainlab.github.io/jhossain.me/posts/features/</guid>
       <description>This theme has been designed from a personal point of preference. As a developer, I want to organize my portfolio in a way that will reflect my skills best. So, this theme may or may not meet your needs but I will be happy to have your feedback.
 This post will give you an overview of the features that this theme incorporates.
 Minimalist Design This theme has been designed to be minimalist and beautiful.</description>
@@ -24,20 +24,20 @@ Minimalist Design This theme has been designed to be minimalist and beautiful.</
     
     <item>
       <title>Installation</title>
-      <link>https://github.com/hossainlab/jhossain.me/posts/installation/</link>
+      <link>https://hossainlab.github.io/jhossain.me/posts/installation/</link>
       <pubDate>Mon, 08 Jun 2020 08:06:25 +0600</pubDate>
       
-      <guid>https://github.com/hossainlab/jhossain.me/posts/installation/</guid>
+      <guid>https://hossainlab.github.io/jhossain.me/posts/installation/</guid>
       <description>This post will give you step by step instructions on how to install and use this theme.
 Requirements  Hugo Version 0.68.0 or higher  Installation  Create your site if you haven&amp;rsquo;t already  hugo new site my-site -f=yaml cd my-site git init  Add the theme as git sub-module  git submodule add https://github.com/hossainemruz/toha.git themes/toha   Don&amp;rsquo;t use SSH URL of the theme during adding as git sub-module.</description>
     </item>
     
     <item>
       <title>Analytics and Comments</title>
-      <link>https://github.com/hossainlab/jhossain.me/posts/analytics-and-comments/</link>
+      <link>https://hossainlab.github.io/jhossain.me/posts/analytics-and-comments/</link>
       <pubDate>Mon, 08 Jun 2020 06:00:23 +0600</pubDate>
       
-      <guid>https://github.com/hossainlab/jhossain.me/posts/analytics-and-comments/</guid>
+      <guid>https://hossainlab.github.io/jhossain.me/posts/analytics-and-comments/</guid>
       <description>Complete Post Coming Soon&amp;hellip; </description>
     </item>
     
