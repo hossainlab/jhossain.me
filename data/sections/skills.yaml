@@ -10,39 +10,47 @@ section:
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  icon: "images/skills/kubernetes.png"
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  url: https://kubernetes.io/
-
-- name: Go Development
-  icon: "images/skills/go.png"
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  url: "https://golang.org/"
-
-- name: Cloud Computing
-  icon: "images/skills/cloud.png"
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-
-- name: Docker
-  icon: "images/skills/docker.svg"
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  url: "https://www.docker.com/"
-
-- name: Prometheus
-  icon: "images/skills/prometheus.png"
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  url: "https://prometheus.io/"
 
 - name: Linux
   icon: "images/skills/linux.png"
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
+  summary: "Using as the main operating system.Capable of writing bash/shell scripts.Currently,I am using Ubuntu-19.10"
 
 - name: Git
   icon: "images/skills/git.png"
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
+  summary: "Experienced with git-based development. Mostly, use Github."
+  url: "https://git-scm.com/"
+
+- name: Python
+  icon: "images/skills/pylogo.png"
+  summary: "Python is my first programming language.Mostly used Python in Data Science, Bioinformatics and Public Health Research."
+  url: "https://git-scm.com/"
+
+- name: R Programming
+  icon: "images/skills/Rlogo.png"
+  summary: "Know basic R programming for Data Analysis including basic R packages such as dplyr, ggplot2, seqinr(for sequence analysis)"
+  url: "https://git-scm.com/"
+
+- name: Data Science
+  icon: "images/skills/ds.png"
+  summary: "Used NumPy,Pandas,Matplotlib,Seaborn and Plotly for data science projects. Also used Streamlit for creating data products/dashboard."
+  url: "https://git-scm.com/"
+
+
+- name: BioStack
+  icon: "images/skills/dna.png"
+  summary: "My BioStacks(Bioinformatics/Genomics) are Biopython, Scikit-bio, BioPandas, FastQC, MultiQC"
+  url: "https://git-scm.com/"
+
+
+- name: LaTeX
+  #icon: "images/skills/tex.jpg"
+  summary: "LaTeX is my first document preparation system.Generally,I am using LaTeX for writing my reports, assignemts and research papers."
   url: "https://git-scm.com/"
 
 - name: C++
   icon: "images/skills/c++.png"
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
+  summary: "Know basic C/C++ programming. Used for basic understanding of memory management and problem solving."
+
+- name: Web
+  icon: "images/skills/web.png"
+  summary: "I have little bit Knowledge of HTML, CSS, JS, Django and WordPress."
