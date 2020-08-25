@@ -1,4 +1,4 @@
-baseURL : "https://hossainlab.github.io/jhossain.me/"
+baseURL : "https://hossainlab.netlify.app/"
 languageCode: en-us
 title: "Jubayer Hossain"
 theme: "toha"
