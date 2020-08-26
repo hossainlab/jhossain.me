@@ -24,3 +24,19 @@ experiences:
     responsibilities:
     - Design data analysis courses for research trainee.
     - Lead management team.
+
+- company:
+    name: Bio-Bio-1
+    url: "https://www.facebook.com/biobio.one"
+    location: Dhaka
+    # company overview
+    overview: Bio-Bio-1 is a voluntary not-for-profit organization, formed by some passionate individuals in late 2008 to learn Bioinformatics.
+  positions:
+  - designation: Team Member
+    start: April 2017
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Learning
+    - Group discussion.
