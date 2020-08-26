@@ -31,14 +31,14 @@ params:
   description: Personal website of Jubayer Hossain.
 
   # Background image of the landing page
-  background: "images/background.jpg"
+  background: "images/placeholder-big-2.jpg"
 
   # Provide logos for your site. The inverted logo will be used in the initial
   # transparent navbar and the main logo will be used in the non-transparent navbar.
   # It will default to the theme logos if not provided.
-  logo:
-    main: /assets/images/main_logo.png
-    inverted: /assets/images/inverted_logo.png
+  # logo:
+  #   main: /assets/images/main_logo.png
+  #   inverted: /assets/images/inverted_logo.png
 
   # GitHub repo URL of your site
   gitRepo: https://github.com/hossainlab/jhossain.me
@@ -53,7 +53,7 @@ params:
   # they will be separated by a divider from the main menus.
   customMenus:
   - name: Notes
-    url: https://hossainemruz.gitbook.io/notes/
+    url: /
 
   # Provide newsletter configuration. This feature hasn't been implemented yet.
   # Currently, you can just hide it from the footer.
@@ -64,7 +64,7 @@ params:
   author:
     name: "Jubayer Hossain"
     nickname: "Jubayer"
-    image: "/images/jhossain.png"
+    image: "/images/jubayer3.jpg"
     # give your contact information. they will be used in the footer
     contactInfo:
       email: "jubayer@hdrobd.org"
@@ -73,4 +73,4 @@ params:
     summary:
     - I am a Health Data Science Enthusiastic
     - I work with Python
-    - I love to work with some fun projects
+    - I love to work with some research projects

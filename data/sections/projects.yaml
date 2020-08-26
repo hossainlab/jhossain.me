@@ -23,17 +23,17 @@ buttons:
 # your projects
 projects:
 - name: SeqStats
-  logo: images/projects/kubernetes.png
+  logo: images/projects/pylogo.png
   role: Developer
   timeline: "March 2020 - Present"
   repo: https://github.com/hossainlab/SeqStats # If your project is a public repo on GitHub, then provide this link. it will show star count.
   #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
   summary: A Python Package for Sequence(DNA/Protein Analysis).
-  tags: ["professional", "kubernetes", "cloud"]
+  tags: ["packages"]
 
 
 - name: Python for Bioinformatics
-  logo: images/projects/no-code.png
+  logo: images/projects/pylogo.png
   role: Instructor
   timeline: "June 2020 - June 2020"
   repo: https://github.com/hdro/PY4Bioinformatics
@@ -41,8 +41,8 @@ projects:
   summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
   tags: ["courses", "learn"]
 
-- name: Introduction to LaTeX for Researchers.
-  logo: images/projects/no-code.png
+- name: Introduction to LaTeX for Researchers
+  logo: images/projects/LaTeX_logo.svg
   role: Instructor
   timeline: "Aug 2020 - Dec 2020"
   repo: https://github.com/hdro/ResearchToolbox
@@ -51,21 +51,32 @@ projects:
   tags: ["courses", "learn"]
 
 - name: Health Data Research Organization
-  logo: images/projects/toha.png
+  logo: images/projects/wordpress.png
   role: Developer
   timeline: "July 2020 - Present"
-  repo: https://hdrobd.org/
-  summary: Health Data Research Organization official Website..
+  # repo: https://hdrobd.org/
+  url: https://hdrobd.org/
+  summary: Health Data Research Organization official Website.
   tags: ["web"]
 
 - name: HDRO Training
-  logo: images/projects/toha.png
+  logo: images/projects/wordpress.png
   role: Developer
   timeline: "July 2020 - Present"
-  repo: http://training.hdrobd.org/
+  # repo: http://training.hdrobd.org/
+  url: http://training.hdrobd.org/
   summary: Website for Health Data Research Organization Training/Online Courses.
   tags: ["web"]
 
+
+- name: IamBloodDonor
+  logo: images/projects/django.png
+  role: Developer
+  timeline: "Nov 2018 - Nov 2018"
+  repo: https://github.com/hossainlab/IamBloodDonor
+  # url: http://training.hdrobd.org/
+  summary: Web Application for Searching Blood Donor.
+  tags: ["web"]
 
 
 
@@ -75,4 +86,12 @@ projects:
   timeline: "July 2020 - Present"
   url: "https://hdrobd.org/projects/"
   summary: To learn about current perceptions about antibiotic use and resistance so that an effective community engagement strategy could be devised.
-  tags: ["research","iot"]
+  tags: ["research"]
+
+
+- name: Bioinformatics Approach for Profiling Antibiotic Resistance genes from Metagenomic DNA Sequence.
+  role: Contributor
+  timeline: "Jan 2020 - Present"
+  url: "https://github.com/hossainlab/ARGs"
+  summary: Our overall goal is to achieve sustainable development goals in healthcare for Bangladesh by 2030.
+  tags: ["research"]
