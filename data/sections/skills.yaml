@@ -13,7 +13,7 @@ skills:
 
 - name: Linux
   icon: "images/skills/linux.png"
-  summary: "Using as the main operating system.Capable of writing bash/shell scripts.Currently,I am using Ubuntu-19.10"
+  summary: "I am a fig fan of linux. Using linux as the main operating system. Most used distros are Manjaro XFCE, Rasbian, Ubuntu MATE and Ubuntu. Currently, I am using Ubuntu 18.04"
 
 - name: Git
   icon: "images/skills/git.png"
@@ -22,12 +22,12 @@ skills:
 
 - name: Python
   icon: "images/skills/pylogo.png"
-  summary: "Python is my first programming language.Mostly used Python in Data Science, Bioinformatics and Public Health Research."
+  summary: "Python is my first programming language. Mostly, used in Data Collection,Data Analysis, and Bioinformatics."
   url: "https://git-scm.com/"
 
 - name: R Programming
   icon: "images/skills/Rlogo.png"
-  summary: "Know basic R programming for Data Analysis including basic R packages such as dplyr, ggplot2, seqinr(for sequence analysis)"
+  summary: "Know basic R programming for Data Analysis including basic R packages such as dplyr, ggplot2, seqinr(for DNA sequence analysis)"
   url: "https://git-scm.com/"
 
 - name: Data Science

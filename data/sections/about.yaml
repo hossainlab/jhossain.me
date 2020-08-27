@@ -16,7 +16,7 @@ company:
 resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I am a student of Microbiology at [Jagannath University](https://jnu.ac.bd/dept/portal/web/microbiology).I am also a Health Data Science Enthusiastic. My research interests are health data science, bioinformatics, genomics and machine learning.'
+summary: 'I am a student of Microbiology at [Jagannath University](https://jnu.ac.bd/dept/portal/web/microbiology) and Health Data Science Enthusiastic. My research interests are health data science, bioinformatics, microscopic image analysis, and machine learning. Recently, we have formed an organization called Health Data Research Organization for creating research opportunities in health data science and genomic data science in our country and I am working on it.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -34,6 +34,9 @@ socialLinks:
   icon: "fab fa-kaggle"
   url: "https://www.kaggle.com/jhossain"
 
+- name: Medium
+  icon: "fab fa-medium"
+  url: "https://medium.com/@JHossain28"
 - name: Github
   icon: "fab fa-github"
   url: "https://www.github.com/hossainlab"
@@ -50,23 +53,23 @@ socialLinks:
 # give the percentage between 50 to 100 with 5 intervals.
 # currently supported colors: blue, yellow, pink, green, sky, orange
 softSkills:
-- name: Leadership
-  percentage: 85
+- name: Data Collection
+  percentage: 100
   color: blue
-- name: Team Work
-  percentage: 90
+- name: Data Analysis
+  percentage: 100
   color: yellow
-- name: Communication
-  percentage: 85
+- name: Bioinformatics
+  percentage: 100
   color: pink
-- name: Hard Working
-  percentage: 85
+- name: Self Learner
+  percentage: 100
   color: green
-- name: Fast Learner
-  percentage: 85
+- name: Team Work
+  percentage: 100
   color: sky
 - name: Problem Solving
-  percentage: 85
+  percentage: 100
   color: orange
 
 
