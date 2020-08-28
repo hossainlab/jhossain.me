@@ -34,6 +34,10 @@ socialLinks:
   icon: "fab fa-kaggle"
   url: "https://www.kaggle.com/jhossain"
 
+- name: Research Gate
+  icon: "fab fa-researchgate"
+  url: "https://www.researchgate.net/profile/Jubayer_Hossain5"
+
 - name: Medium
   icon: "fab fa-medium"
   url: "https://medium.com/@JHossain28"

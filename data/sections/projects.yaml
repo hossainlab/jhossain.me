@@ -11,8 +11,6 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: Data Science
-  filter: "data science"
 - name: Courses
   filter: "courses"
 - name: Web
