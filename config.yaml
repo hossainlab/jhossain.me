@@ -41,7 +41,7 @@ params:
   #   inverted: /assets/images/inverted_logo.png
 
   # GitHub repo URL of your site
-  gitRepo: https://github.com/hossainlab/jhossain.me
+  # gitRepo: https://github.com/hossainlab/jhossain.me
 
   # specify whether you want to write some blog posts or not
   enableBlogPost: true
