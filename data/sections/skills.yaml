@@ -22,7 +22,7 @@ skills:
 
 - name: Python
   icon: "images/skills/pylogo.png"
-  summary: "Python is my first programming language. Mostly, used in Data Collection,Data Analysis, and Bioinformatics."
+  summary: "NumPy, Pandas, Matplotlib, Seaborn, Plotly, Plotnine"
   url: "https://git-scm.com/"
 
 - name: R Programming
@@ -30,15 +30,15 @@ skills:
   summary: "Know basic R programming for Data Analysis including basic R packages such as dplyr, ggplot2, seqinr(for DNA sequence analysis)"
   url: "https://git-scm.com/"
 
-- name: Data Science
-  icon: "images/skills/ds.png"
-  summary: "Used NumPy,Pandas,Matplotlib,Seaborn and Plotly for data science projects. Also used Streamlit for creating data products/dashboard."
+- name: Streamlit
+  icon: "images/skills/streamlit.png"
+  summary: "The fastest way to build dashboards or ML app"
   url: "https://git-scm.com/"
 
 
 - name: BioStack
   icon: "images/skills/dna.png"
-  summary: "My BioStacks(Bioinformatics/Genomics) are Biopython, Scikit-bio, BioPandas, FastQC, MultiQC"
+  summary: "My BioStacks are Biopython, Scikit-bio, BioPandas, FastQC, MultiQC"
   url: "https://git-scm.com/"
 
 
@@ -51,6 +51,6 @@ skills:
   icon: "images/skills/c++.png"
   summary: "Know basic C/C++ programming. Used for basic understanding of memory management and problem solving."
 
-- name: Web
+- name: Web Development
   icon: "images/skills/web.png"
   summary: "I have little bit Knowledge of HTML, CSS, JS, Django and WordPress."

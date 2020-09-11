@@ -17,6 +17,8 @@ buttons:
   filter: "web"
 - name: Data Science
   filter: "datascience"
+- name: Data App
+  filter: "dataapp"
 - name: Bioinformatics
   filter: "bioinformatics"
 - name: Research
@@ -43,18 +45,29 @@ projects:
   timeline: "June 2020 - Complete"
   repo: https://github.com/hdro/PY4Bioinformatics
   #url: ""
-  summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
+  summary: Learn Python for exploring genome sequence.
   tags: ["courses", "learn"]
 
 - name: Introduction to LaTeX for Researchers
-  # logo: images/projects/LaTeX_logo.svg
+  logo: images/projects/LaTeX_logo.svg
   role: Instructor
   timeline: "Aug 2020 - Complete"
   repo: https://github.com/hdro/ResearchToolbox
   #url: ""
-  summary: The best way to write secure and reliable applications. Write nothing; deploy nowhere.
+  summary: Produce high quality document using LaTeX.
   tags: ["courses", "learn"]
 
+- name: R for Health Data Analysis
+  logo: images/projects/Rlogo.png
+  role: Instructor
+  timeline: "Oct 2020 - Running"
+  # repo: https://github.com/hdro/ResearchToolbox
+  url: "https://hdro.github.io/R4HDA/"
+  summary: Learn R Programming for analyzing health data.
+  tags: ["courses", "learn"]
+
+
+# Website
 - name: Health Data Research Organization
   logo: images/projects/wordpress.png
   role: Developer
@@ -73,7 +86,6 @@ projects:
   summary: Website for Health Data Research Organization Training/Online Courses.
   tags: ["web"]
 
-
 - name: IamBloodDonor
   logo: images/projects/django.png
   role: Developer
@@ -83,9 +95,51 @@ projects:
   summary: Web Application for Searching Blood Donor.
   tags: ["web"]
 
+- name: JHossain.me
+  logo: images/projects/hugo.png
+  role: Developer
+  timeline: "Nov 2018 - Complete"
+  # repo: https://github.com/hossainlab/IamBloodDonor
+  url: https://jhossain.me/
+  summary: Personal Website.
+  tags: ["web"]
+
+# Data Science
+- name: Explore the Gapminder Dataset with Plotly Express
+  logo: images/projects/plotly.png
+  # role: Developer
+  # timeline: "Sep 2020 - Running"
+  # repo: https://github.com/hossainlab/IamBloodDonor
+  url: https://www.kaggle.com/jhossain/explore-the-gapminder-dataset-with-plotly-express
+  summary: Gapminder data visualization using Plotly Express.
+  tags: ["datascience"]
+
+
+# Data App
+- name: SeqExplorer
+  logo: images/projects/streamlit.png
+  role: Developer
+  timeline: "Sep 2020 - Complete"
+  # repo: https://github.com/hossainlab/IamBloodDonor
+  url: https://github.com/hossainlab/SeqExplorer
+  summary: Explore DNA and Protein sequence using SeqExplorer.
+  tags: ["dataapp"]
+
+- name: Sentiment Dashboard
+  logo: images/projects/streamlit.png
+  role: Developer
+  timeline: "Sep 2020 - Complete"
+  # repo: https://github.com/hossainlab/IamBloodDonor
+  url: https://github.com/hossainlab/Sentiment_Dashboard
+  summary: Twetter sentiment analysis dashboard using Streamlit.
+  tags: ["dataapp"]
+
+
+
+
 # Bioinformatics
 - name: Comparative Study of SARS, MERS, EBOLA and COVID-19
-  # logo: images/projects/biopandas.png
+  logo: images/projects/dna.png
   role: Data Analyst
   timeline: "Nov 2018 - Running"
   # repo: https://github.com/hossainlab/IamBloodDonor
@@ -94,7 +148,7 @@ projects:
   tags: ["bioinformatics"]
 
 - name: Statistical Analysis of Dengue Virus using Python
-  # logo: images/projects/biopandas.png
+  logo: images/projects/dna.png
   role: Data Analyst
   timeline: "June 2020 - Complete"
   # repo: https://github.com/hossainlab/IamBloodDonor
@@ -105,8 +159,9 @@ projects:
 
 # Research
 - name: Public Perception on the Spread of Antibiotic Resistance in Bangladesh
+  logo: images/projects/rgate.png
   role: Data Analyst
   timeline: "July 2020 - Running"
-  url: "https://hdrobd.org/projects/"
+  url: "https://www.researchgate.net/project/Public-Perception-on-the-Spread-of-Antibiotic-Resistance-in-Bangladesh"
   summary: To learn about current perceptions about antibiotic use and resistance so that an effective community engagement strategy could be devised.
   tags: ["research"]
