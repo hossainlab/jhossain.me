@@ -16,7 +16,7 @@ experiences:
     # company overview
     overview: The Health Data Research Organization (HDRO) is a non-profit online platform for research and dissemination of scientific information from secondary-sources/ third-party data. The organization is run by students and young professionals from biological science and health science backgrounds, supervised by faculty members from the life sciences of universities.
   positions:
-  - designation: Founder & Director
+  - designation: Founder 
     start: June 2020
     # don't provide end date if you are currently working there. It will be replaced by "Present"
     # end: Dec 2020

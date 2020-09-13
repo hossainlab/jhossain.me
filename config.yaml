@@ -31,7 +31,7 @@ params:
   description: Hey there! This is Jubayer Hossain. Welcome to my personal website.
 
   # Background image of the landing page
-  background: "images/placeholder-big-2.jpg"
+  background: "images/bg.gif"
 
   # Provide logos for your site. The inverted logo will be used in the initial
   # transparent navbar and the main logo will be used in the non-transparent navbar.
@@ -64,7 +64,7 @@ params:
   author:
     name: "Jubayer Hossain"
     nickname: "Jubayer"
-    image: "/images/jubayer3.jpg"
+    image: "/images/focus.jpg"
     # give your contact information. they will be used in the footer
     contactInfo:
       email: "jubayer@hdrobd.org"
