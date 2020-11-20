@@ -56,7 +56,7 @@ social:
 
 - icon: kaggle
   icon_pack: fab
-  link: https://www.kaggle.com/jhossain 
+  link: https://www.kaggle.com/jhossain
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`,
@@ -66,7 +66,7 @@ social:
 #   link: media/resume.pdf
 
 # Email for Contact widget or Gravatar
-email: ""
+email: "b150605021@mib.jnu.ac.bd"
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
@@ -79,4 +79,4 @@ user_groups:
 
 I am a student of Microbiology at Jagannath University and Health Data Science Enthusiastic. My research interests are health data science, bioinformatics, microscopic image analysis, and machine learning. Recently, we have formed an organization named Health Data Research Organization for creating research opportunities in health data science and genomic data science in Bangladesh and I am working on it.
 
-{{< icon name="download" pack="fas" >}} Download{{< staticref "media/demo_resume.pdf" "newtab" >}}Resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Resume{{< staticref "media/demo_resume.pdf" "newtab" >}}{{< /staticref >}}.
