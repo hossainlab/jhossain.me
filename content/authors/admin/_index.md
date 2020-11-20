@@ -43,16 +43,20 @@ social:
   link: '/#contact'
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
+  link: https://twitter.com/JHossain28
 - icon: graduation-cap  # OR `google-scholar`
   icon_pack: fas  # OR `ai`
   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/hossainlab
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://www.linkedin.com/jubayer28
+
+- icon: kaggle
+  icon_pack: fab
+  link: https://www.kaggle.com/jhossain 
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`,
