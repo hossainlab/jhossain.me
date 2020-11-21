@@ -79,4 +79,4 @@ user_groups:
 
 I am a student of Microbiology at Jagannath University and Health Data Science Enthusiastic. My research interests are health data science, bioinformatics, microscopic image analysis, and machine learning. Recently, we have formed an organization named Health Data Research Organization for creating research opportunities in health data science and genomic data science in Bangladesh and I am working on it.
 
-{{< icon name="download" pack="fas" >}} Resume{{< staticref "media/demo_resume.pdf" "newtab" >}}{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} {{< staticref "media/demo_resume.pdf" "newtab" >}}Resume{{< /staticref >}}.
