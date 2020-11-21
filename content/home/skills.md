@@ -43,9 +43,9 @@ subtitle = ""
   name = "Github"
 
 [[feature]]
-  icon = "jupyter"
+  icon = "sql"
   icon_pack = "fab"
-  name = "Jupyter Notebook"
+  name = "SQL"
 
 
 # Uncomment to use emoji icons.
