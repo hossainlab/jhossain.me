@@ -4,7 +4,7 @@
 widget: tag_cloud
 
 # Activate this widget? true/false
-active: true
+active: false 
 
 # This file represents a page section.
 headless: true
@@ -18,7 +18,7 @@ subtitle:
 content:
   # Choose how many tags you would like to display (0 = all tags)
   count: 20
-  
+
   # Choose the taxonomy from `config.toml` to display (e.g. tags, categories)
   taxonomy: tags
 
