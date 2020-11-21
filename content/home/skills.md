@@ -31,10 +31,22 @@ subtitle = ""
   name = "Statistics"
   # description = "100%"
 
+
 [[feature]]
-  icon = "git"
+  icon = "linux"
   icon_pack = "fab"
-  name = "Git"
+  name = "Linux"
+
+[[feature]]
+  icon = "github"
+  icon_pack = "fab"
+  name = "Github"
+
+[[feature]]
+  icon = "jupyter"
+  icon_pack = "fab"
+  name = "Jupyter Notebook"
+
 
 # Uncomment to use emoji icons.
 # [[feature]]
