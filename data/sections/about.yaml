@@ -1,0 +1,86 @@
+# section information
+section:
+  name: About
+  enable: true
+  weight: 1
+  showOnNavbar: true
+
+# your designation
+designation: Founder
+# your company information
+company:
+  name: Health Data Research Organization.
+  url: "https://hdrobd.org/"
+
+# your resume. this file path should be relative to you "static" directory
+resume: "files/resume.pdf"
+
+# a summary about you
+summary: 'I am a student of Microbiology at [Jagannath University](https://jnu.ac.bd/dept/portal/web/microbiology) and Health Data Science Enthusiastic. My research interests are health data science, bioinformatics, microscopic image analysis, and machine learning. Recently, we have formed an organization named Health Data Research Organization for creating research opportunities in health data science and genomic data science in Bangladesh and I am working on it.'
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+
+- name: Email
+  icon: "fas fa-envelope"
+  url: "jubayer@hdrobd.org"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/jubayer28/"
+
+- name: Kaggle
+  icon: "fab fa-kaggle"
+  url: "https://www.kaggle.com/jhossain"
+
+- name: Research Gate
+  icon: "fab fa-researchgate"
+  url: "https://www.researchgate.net/profile/Jubayer_Hossain5"
+
+- name: Medium
+  icon: "fab fa-medium"
+  url: "https://medium.com/@JHossain28"
+- name: Github
+  icon: "fab fa-github"
+  url: "https://www.github.com/hossainlab"
+
+- name: Twitter
+  icon: "fab fa-twitter"
+  url: "#https://www.twitter.com/JHossain28"
+
+- name: Facebook
+  icon: "fab fa-facebook"
+  url: "https://www.facebook.com/JHossain28"
+
+# your soft skills
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: Data Collection
+  percentage: 100
+  color: blue
+- name: Data Analysis
+  percentage: 100
+  color: yellow
+- name: Bioinformatics
+  percentage: 100
+  color: pink
+- name: Machine Learning
+  percentage: 100
+  color: green
+- name: Drug Discovery
+  percentage: 100
+  color: sky
+- name: Img Processing 
+  percentage: 100
+  color: orange
+
+
+# you can also provide color code instead of pre-defined color name
+# - name: Example 1
+#   percentage: 75
+#   color: "#00adb5"
+# - name: Example 2
+#   percentage: 65
+#   color: "#8b8383"

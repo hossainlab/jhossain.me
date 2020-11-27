@@ -1,0 +1,167 @@
+# section information
+section:
+  name: Projects
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: Courses
+  filter: "courses"
+- name: Web
+  filter: "web"
+- name: Data Science
+  filter: "datascience"
+- name: Data App
+  filter: "dataapp"
+- name: Bioinformatics
+  filter: "bioinformatics"
+- name: Research
+  filter: "research"
+
+# your projects
+projects:
+- name: SeqStats
+  logo: images/projects/pylogo.png
+  role: Developer
+  timeline: "March 2020 - Under Development"
+  repo: https://github.com/hossainlab/SeqStats # If your project is a public repo on GitHub, then provide this link. it will show star count.
+  #url: ""  # If your project is not a public repo but it has a website or any external details url then provide it here. don't provide "repo" and "url" simultaneously.
+  summary: A Python Package for Sequence(DNA/Protein Analysis).
+  tags: ["packages"]
+
+
+
+
+# Courses
+- name: Python for Bioinformatics
+  logo: images/projects/pylogo.png
+  role: Instructor
+  timeline: "June 2020 - Complete"
+  repo: https://github.com/hdro/PY4Bioinformatics
+  #url: ""
+  summary: Learn Python for exploring genome sequence.
+  tags: ["courses", "learn"]
+
+- name: Introduction to LaTeX for Researchers
+  logo: images/projects/LaTeX_logo.svg
+  role: Instructor
+  timeline: "Aug 2020 - Complete"
+  repo: https://github.com/hdro/ResearchToolbox
+  #url: ""
+  summary: Produce high quality document using LaTeX.
+  tags: ["courses", "learn"]
+
+- name: R for Health Data Analysis
+  logo: images/projects/Rlogo.png
+  role: Instructor
+  timeline: "Oct 2020 - Running"
+  # repo: https://github.com/hdro/ResearchToolbox
+  url: "https://hdro.github.io/R4HDA/"
+  summary: Learn R Programming for analyzing health data.
+  tags: ["courses", "learn"]
+
+
+# Website
+- name: Health Data Research Organization
+  logo: images/projects/wordpress.png
+  role: Developer
+  timeline: "July 2020 - Under Development"
+  # repo: https://hdrobd.org/
+  url: https://hdrobd.org/
+  summary: Health Data Research Organization official Website.
+  tags: ["web"]
+
+- name: HDRO Training
+  logo: images/projects/wordpress.png
+  role: Developer
+  timeline: "July 2020 - Under Development"
+  # repo: http://training.hdrobd.org/
+  url: http://training.hdrobd.org/
+  summary: Website for Health Data Research Organization Training/Online Courses.
+  tags: ["web"]
+
+- name: IamBloodDonor
+  logo: images/projects/django.png
+  role: Developer
+  timeline: "Nov 2018 - Complete"
+  repo: https://github.com/hossainlab/IamBloodDonor
+  # url: http://training.hdrobd.org/
+  summary: Web Application for Searching Blood Donor.
+  tags: ["web"]
+
+- name: JHossain.me
+  logo: images/projects/hugo.png
+  role: Developer
+  timeline: "Nov 2018 - Complete"
+  # repo: https://github.com/hossainlab/IamBloodDonor
+  url: https://jhossain.me/
+  summary: Personal Website.
+  tags: ["web"]
+
+# Data Science
+- name: Explore the Gapminder Dataset with Plotly Express
+  logo: images/projects/plotly.png
+  # role: Developer
+  # timeline: "Sep 2020 - Running"
+  # repo: https://github.com/hossainlab/IamBloodDonor
+  url: https://www.kaggle.com/jhossain/explore-the-gapminder-dataset-with-plotly-express
+  summary: Gapminder data visualization using Plotly Express.
+  tags: ["datascience"]
+
+
+# Data App
+- name: SeqExplorer
+  logo: images/projects/streamlit.png
+  role: Developer
+  timeline: "Sep 2020 - Complete"
+  # repo: https://github.com/hossainlab/IamBloodDonor
+  url: https://github.com/hossainlab/SeqExplorer
+  summary: Explore DNA and Protein sequence using SeqExplorer.
+  tags: ["dataapp"]
+
+- name: Sentiment Dashboard
+  logo: images/projects/streamlit.png
+  role: Developer
+  timeline: "Sep 2020 - Complete"
+  # repo: https://github.com/hossainlab/IamBloodDonor
+  url: https://github.com/hossainlab/Sentiment_Dashboard
+  summary: Twetter sentiment analysis dashboard using Streamlit.
+  tags: ["dataapp"]
+
+
+
+
+# Bioinformatics
+- name: Comparative Study of SARS, MERS, EBOLA and COVID-19
+  logo: images/projects/dna.png
+  role: Data Analyst
+  timeline: "Nov 2018 - Running"
+  # repo: https://github.com/hossainlab/IamBloodDonor
+  url: https://github.com/hossainlab/COVID-19_Study
+  summary: Compare their DNA sequence and Protein(Amino Acid) sequence using Python, Biopython and BioPandas.
+  tags: ["bioinformatics"]
+
+- name: Statistical Analysis of Dengue Virus using Python
+  logo: images/projects/dna.png
+  role: Data Analyst
+  timeline: "June 2020 - Complete"
+  # repo: https://github.com/hossainlab/IamBloodDonor
+  url: https://nbviewer.jupyter.org/github/hossainlab/Bioinformatics_Case_Study/blob/master/notebooks/Sequence%20Statistics%20of%20Dengue%20Virus%20using%20Python.ipynb
+  summary: In this project, you'll learn to explore DNA and Protein sequence statistics by using Python, Biopython and Scikit-bio.
+  tags: ["bioinformatics"]
+
+
+# Research
+- name: Public Perception on the Spread of Antibiotic Resistance in Bangladesh
+  logo: images/projects/rgate.png
+  role: Data Analyst
+  timeline: "July 2020 - Running"
+  url: "https://www.researchgate.net/project/Public-Perception-on-the-Spread-of-Antibiotic-Resistance-in-Bangladesh"
+  summary: To learn about current perceptions about antibiotic use and resistance so that an effective community engagement strategy could be devised.
+  tags: ["research"]
