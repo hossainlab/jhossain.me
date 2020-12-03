@@ -1,37 +1,37 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Jubayer Hossain
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: Founder
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
-  url: ""
+- name: Health Data Research Organization
+  url: "https://hdrobd.org/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Health Data Science
+- Computational Drug Design
+- Bioinformatics
+- Machine Learning
+- Cheminformatics
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: MS.c in Microbiology
+    institution: Jagannath University
+    year: Running
+  - course: BS.c in Artificial Intelligence
+    institution:  Jagannath University
+    year: 2020
+
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
