@@ -18,43 +18,27 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "Founder"
-  company = "Health Data Research Organization"
-  company_url = "https://hdrobd.org/"
-  location = "Dhaka, Bangladesh"
-  date_start = "20 Jun, 2020"
+  title = "CEO"
+  company = "GenCoin"
+  company_url = ""
+  location = "California"
+  date_start = "2017-01-01"
   date_end = ""
   description = """
   Responsibilities include:
-
-  * Management Lead
-  * Content Creator
-  * Trainer
+  
+  * Analysing
+  * Modelling
+  * Deploying
   """
 
 [[experience]]
-  title = "Lead Organizer & Instructor"
-  company = "Introduction to Scientific Computing for Biologists(2020 Edition)"
+  title = "Professor"
+  company = "University X"
   company_url = ""
-  location = "Dhaka, Bangladesh"
-  date_start = "14 Nov, 2020"
-  date_end = "27 Jan, 2021"
-  description = """Taught
-  * Introduction to UNIX/LINUX for Biologists.
-  * Scientific Typesetting(Markdown&LaTeX)
-  * Version Control with Git and Github
-  """
+  location = "California"
+  date_start = "2016-01-01"
+  date_end = "2016-12-31"
+  description = """Taught electronic engineering and researched semiconductor physics."""
 
-  [[experience]]
-    title = "Teacher"
-    company = "WhiteHope Academy"
-    company_url = ""
-    location = "Dhaka, Banglades"
-    date_start = "06 July, 2016"
-    date_end = ""
-    description = """Taught
-    * Chemistry(HSC).
-    * Physics(SSC)
-    * Chemistry(SSC)
-    """
 +++
