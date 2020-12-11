@@ -38,4 +38,46 @@ date_format = "Jan 2006"
   date_end = "2020-05-12"
   description = ""
 
+[[item]]
+  organization = "Coursera"
+  organization_url = "https://www.coursera.org/"
+  title = "Essential Epidemiologic Tools for Public Health Practice"
+  url = "https://www.coursera.org/learn/python"
+  certificate_url = "https://www.coursera.org/account/accomplishments/certificate/5WHJWDLMS39T"
+  date_start = "2020-06-01"
+  date_end = "2020-06-12"
+  description = ""
+
+[[item]]
+  organization = "Coursera"
+  organization_url = "https://www.coursera.org/"
+  title = "Data Visualization with Plotly Express"
+  url = "https://www.coursera.org/learn/python"
+  certificate_url = "https://www.coursera.org/account/accomplishments/certificate/RDS8SG3CHSYJ"
+  date_start = "2020-06-01"
+  date_end = "2020-06-12"
+  description = ""
+
+
+[[item]]
+  organization = "Coursera"
+  organization_url = "https://www.coursera.org/"
+  title = "Spreadsheets for Beginners using Google Sheets"
+  url = "https://www.coursera.org/learn/python"
+  certificate_url = "https://www.coursera.org/account/accomplishments/certificate/HDHZTBR7Z73P"
+  date_start = "2020-04-01"
+  date_end = "2020-04-10"
+  description = ""
+
+
+  [[item]]
+  organization = "Coursera"
+  organization_url = "https://www.coursera.org/"
+  title = "Exploratory Data Analysis with Seaborn"
+  url = "https://www.coursera.org/learn/python"
+  certificate_url = "https://www.coursera.org/account/accomplishments/certificate/U6FAPRHMBFD5"
+  date_start = "2020-05-01"
+  date_end = "2020-05-10"
+  description = ""
+
 +++

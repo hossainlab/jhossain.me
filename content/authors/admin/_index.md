@@ -36,18 +36,24 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-- icon: linkedin
+- icon: envelope
   icon_pack: fas
   link: '/#contact'  # For a direct email link, use "mailto:test@example.org".
 - icon: twitter
   icon_pack: fab
-  link: https://www.linkedin.com/in/jubayer28/
-# - icon: google-scholar
-#   icon_pack: ai
-#   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://www.twitter.com/JHossain28/
+
+- icon: linkedin
+  icon_pack: fab
+  link:  https://www.linkedin.com/in/jubayer28/
 - icon: github
   icon_pack: fab
   link: https://github.com/hossainlab
+
+- icon: researchgate
+  icon_pack: fab
+  link: https://github.com/hossainlab
+
 
 
 # Link to a PDF of your resume/CV from the About widget.
@@ -72,3 +78,6 @@ user_groups:
 I am a Master's student of Microbiology at [Jagannath University](https://jnu.ac.bd/dept/portal/web/microbiology) and Health Data Science Enthusiastic. My research interests are health data science, bioinformatics, microscopic image analysis, drug discovery and machine learning. I am also the founder of [Health Data Research Organization](https://hdrobd.org/). The Health Data Research Organization (HDRO) is a non-profit organization for research and dissemination of scientific information from secondary-sources/ third-party data. The organization is run by students and young professionals from biological science and health science backgrounds, supervised by faculty members from the life sciences of universities.
 
 I use mostly Python for data analysis and machine learning task.
+
+<!-- 
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->

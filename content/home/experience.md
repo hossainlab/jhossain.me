@@ -22,25 +22,42 @@ date_format = "Jan 2006"
   company = "Health Data Research Organization"
   company_url = "https://hdrobd.org/"
   location = "Dhaka, Bangladesh"
-  date_start = "June, 2020"
+  date_start = "2020-06-01"
   date_end = ""
   description = """
   Responsibilities include:
-
+  
   * Analysing
   * Modelling
-  * Teaching
+  * Teaching 
   """
-
 [[experience]]
   title = "Lead Organizer & Instructor"
-  company = "Scientific Computing for Biologists"
+  company = "Scientific Computing for Biologists (2020 Edition)"
   company_url = "https://hdro.github.io/SC4B/"
   location = "Dhaka, Bangladesh"
   date_start = "2020-11-14"
   date_end = "2021-01-25"
   description = """
   Taught:
-  * Introduction to Scientific Computing for Biologists
+  * ISCB20.01-Introduction to Linux for Biologists	
+  * ISCB20.02-Scientific Typesetting	
+  * ISCB20.03-Version Control with Git & Github	
+  * ISCB20.04-Introduction to Python	
+  * ISCB20.05-Introduction to Biostatistics	
+  * ISCB20.06-Python for Scientific Computing	
+  * ISCB20.08-Python for Bioinformatics	
+  * ISCB20.09-Introduction to R	
+  * ISCB20.10-Capstone Project
+  
   """
+
+
+[[experience]]
+  title = "Team Member"
+  company = "Bio-Bio-1"
+  company_url = ""
+  location = "Dhaka, Bangladesh"
+  date_start = "2016-06-01"
+  date_end = ""
 +++
