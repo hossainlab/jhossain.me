@@ -29,13 +29,23 @@ date_format = "Jan 2006"
   description = ""
 
 [[item]]
+  organization = "DataCamp"
+  organization_url = "https://daacamp.com/"
+  title = "Introduction to SQL"
+  url = "https://learn.datacamp.com/courses/introduction-to-sql"
+  certificate_url = "https://www.coursera.org/account/accomplishments/certificate/UB93UTN2JQ9M"
+  date_start = "2020-12-10"
+  date_end = "2020-12-12"
+  description = ""
+
+[[item]]
   organization = "Coursera"
   organization_url = "https://www.coursera.org/"
   title = "Programming for Everybody (Getting Started with Python)"
   url = "https://www.coursera.org/learn/python"
-  certificate_url = "https://www.coursera.org/account/accomplishments/certificate/UB93UTN2JQ9M"
-  date_start = "2020-04-01"
-  date_end = "2020-05-12"
+  certificate_url = "https://www.datacamp.com/statement-of-accomplishment/course/2044fc0c8174ea507fafbf5d47ca71a7fab0a5e3"
+  date_start = "2020-04-10"
+  date_end = "2020-04-15"
   description = ""
 
 [[item]]

@@ -24,24 +24,22 @@ subtitle = ""
   icon_pack = "fab"
   name = "Git"
  
-
 [[feature]]
   icon = "python"
   icon_pack = "fab"
   name = "Python"
-
-
-[[feature]]
-icon = "julia"
-icon_pack = "custom"
-name = "Julia"
 
 [[feature]]
   icon = "r-project"
   icon_pack = "fab"
   name = "R"
  
-  
+[[feature]]
+  icon = "sql"
+  icon_pack = "custom"
+  name = "SQL"
+   
+
 [[feature]]
   icon = "chart-line"
   icon_pack = "fas"

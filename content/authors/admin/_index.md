@@ -52,7 +52,7 @@ social:
 
 - icon: researchgate
   icon_pack: fab
-  link: https://github.com/hossainlab
+  link: https://www.researchgate.net/profile/Jubayer_Hossain5
 
 
 
@@ -75,9 +75,12 @@ user_groups:
 - Visitors
 ---
 
-I am a Master's student of Microbiology at [Jagannath University](https://jnu.ac.bd/dept/portal/web/microbiology) and Health Data Science Enthusiastic. My research interests are health data science, bioinformatics, microscopic image analysis, drug discovery and machine learning. I am also the founder of [Health Data Research Organization](https://hdrobd.org/). The Health Data Research Organization (HDRO) is a non-profit organization for research and dissemination of scientific information from secondary-sources/ third-party data. The organization is run by students and young professionals from biological science and health science backgrounds, supervised by faculty members from the life sciences of universities.
+I am a Master’s student of Microbiology at [Jagannath University](https://jnu.ac.bd/dept/portal/web/microbiology) and Health Data Science Enthusiastic. My research interests are health data science, bioinformatics, microscopic image analysis, drug discovery, and machine learning. I am also the founder of the [Health Data Research Organization](https://hdrobd.org/). The Health Data Research Organization (HDRO) is a non-profit organization for research and dissemination of scientific information from primary and secondary-sources/third-party data. The organization is run by students and young professionals from biological science and health science backgrounds, supervised by faculty members from the life sciences of universities.
 
-I use mostly Python for data analysis and machine learning task.
+I mostly use Python for data analysis and machine learning tasks. I have also a basic knowledge of R and SQL.
+
+
+
 
 <!-- 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}. -->
