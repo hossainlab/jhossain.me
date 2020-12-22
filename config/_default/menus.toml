@@ -8,6 +8,31 @@
   url = "#about"
   weight = 10
 
+[[main]]
+  name = "NumPy"
+  url = "https://hossainlab.github.io/numpy/index.html"
+  weight = 11
+  
+[[main]]
+  name = "Pandas"
+  url = "https://hossainlab.github.io/pandas/index.html"
+  weight = 12
+
+[[main]]
+  name = "DataViz"
+  url = "https://hossainlab.github.io/dataviz/index.html"
+  weight = 13
+
+[[main]]
+  name = "STATS"
+  url = "#"
+  weight = 14
+
+[[main]]
+  name = "AML"
+  url = "https://hossainlab.github.io/aml/index.html"
+  weight = 15
+
 # [[main]]
 #   name = "Posts"
 #   url = "#posts"

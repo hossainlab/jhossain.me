@@ -35,8 +35,8 @@ subtitle = ""
   name = "R"
  
 [[feature]]
-  icon = "sql"
-  icon_pack = "custom"
+  icon = "database"
+  icon_pack = "fas"
   name = "SQL"
    
 
@@ -45,7 +45,22 @@ subtitle = ""
   icon_pack = "fas"
   name = "Statistics"
  
-  
+
+ [[feature]]
+  icon = "dna"
+  icon_pack = "fas"
+  name = "Bioinformatics"
+
+ [[feature]]
+  icon = "mendeley"
+  icon_pack = "fab"
+  name = "Mendeley"
+
+ [[feature]]
+  icon = "book"
+  icon_pack = "fas"
+  name = "LaTeX"
+
 
 # Uncomment to use emoji icons.
 # [[feature]]

@@ -50,6 +50,11 @@ social:
   icon_pack: fab
   link: https://github.com/hossainlab
 
+- icon: kaggle
+  icon_pack: fab
+  link: https://kaggle.com/jhossain
+
+
 - icon: researchgate
   icon_pack: fab
   link: https://www.researchgate.net/profile/Jubayer_Hossain5
