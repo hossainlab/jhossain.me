@@ -1,5 +1,5 @@
 ---
-title: Example Project
+title: Public Perception of the Spread of Antibiotic Resistance in Bangladesh
 summary: An example of using the in-built project page.
 tags:
 - Deep Learning
