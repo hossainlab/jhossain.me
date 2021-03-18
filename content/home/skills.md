@@ -44,7 +44,6 @@ subtitle = ""
   icon = "chart-line"
   icon_pack = "fas"
   name = "Statistics"
- 
 
  [[feature]]
   icon = "dna"

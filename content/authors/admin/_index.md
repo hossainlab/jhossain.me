@@ -14,7 +14,7 @@ organizations:
   url: "https://hdrobd.org/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include health data science, machine learning, genomics and drug discovery.
+bio: I am a Microbiology Master's student at [Jagannath University](https://jnu.ac.bd/dept/portal/web/microbiology) and a Health Data Science enthusiast. Health data science, bioinformatics, microscopic image processing, drug discovery, and machine learning are some of my research interests. I founded the [Health Data Research Organization](https://hdrobd.org/) as well.
 
 interests:
 - Health Data Science
