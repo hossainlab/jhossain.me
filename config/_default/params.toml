@@ -48,7 +48,7 @@ local_business_type = ""
 org_name = ""
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = "Hey there! This Jubayer Hossain. I am a Master’s student of Microbiology at Jagannath University and Health Data Science Enthusiastic. My research interests are health data science, bioinformatics, microscopic image analysis, drug discovery, and machine learning. I am also the founder of the Health Data Research Organization."
+description = "Hey there! This Jubayer Hossain. I am a Microbiology Master’s student at Jagannath University and a Health Data Science enthusiast. Health data science, bioinformatics, microscopic image processing, drug discovery, and machine learning are some of my research interests. I founded the Health Data Research Organization as well."
 
 ############################
 ## Site Features
@@ -57,7 +57,7 @@ description = "Hey there! This Jubayer Hossain. I am a Master’s student of Mic
 # Enable source code highlighting? true/false
 # Documentation: https://wowchemy.com/docs/writing-markdown-latex/#highlighting-options
 highlight = true
-highlight_languages = ["r", "python"]  # Add support for highlighting additional languages
+highlight_languages = ["r", "python", "julia"]  # Add support for highlighting additional languages
 # highlight_style = "github"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
 
 # Enable LaTeX math rendering? true/false
@@ -88,12 +88,12 @@ show_related = {book = true, page = false, post = true, project = true, publicat
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "jubayer@hdrobd.org"
-phone = "+8801771083855"
+email = "contact.jubayerhossain@gmail.com"
+# phone = "+8801771083855"
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-#address = {street = "450 Serra Mall", city = "Stanford", region = "CA", postcode = "94305", country = "United States", country_code = "US"}
+address = {street = "33/3A", city = "Dhaka", region = "Azimpur", postcode = "1211", country = "Bangladesh", country_code = "BD"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
