@@ -61,6 +61,18 @@ subtitle = ""
   name = "LaTeX"
 
 
+ [[feature]]
+  icon = "julia"
+  icon_pack = "custom"
+  name = "Julia"
+
+
+ [[feature]]
+  icon = "spss"
+  icon_pack = "custom"
+  name = "SPSS"
+
+
 # Uncomment to use emoji icons.
 # [[feature]]
 #  icon = ":smile:"
