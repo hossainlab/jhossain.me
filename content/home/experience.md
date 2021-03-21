@@ -33,31 +33,24 @@ date_format = "Jan 2006"
   """
 [[experience]]
   title = "Lead Organizer & Instructor"
-  company = "Scientific Computing for Biologists (2020 Edition)"
-  company_url = "https://hdro.github.io/SC4B/"
+  company = "Scientific Computing for Biologists"
+  company_url = "https://scicomforbio.github.io/"
   location = "Dhaka, Bangladesh"
   date_start = "2020-11-14"
-  date_end = "2021-01-25"
+  date_end = ""
   description = """
-  Taught:
-  * ISCB20.01-Introduction to Linux for Biologists	
-  * ISCB20.02-Scientific Typesetting	
-  * ISCB20.03-Version Control with Git & Github	
-  * ISCB20.04-Introduction to Python	
-  * ISCB20.05-Introduction to Biostatistics	
-  * ISCB20.06-Python for Scientific Computing	
-  * ISCB20.08-Python for Bioinformatics	
-  * ISCB20.09-Introduction to R	
-  * ISCB20.10-Capstone Project
-  
+  Scientific Computing for Biologists is an introductory course organized by Health Data Research Organization with applications to Health Data Science, Genomic Data Science, Bioinformatics, and more. Students will gain foundational knowledge of Python, R programming, Julia, Statistics and get practical experience in building public health and biological data analysis pipeline.
   """
 
 
 [[experience]]
   title = "Team Member"
   company = "Bio-Bio-1"
-  company_url = ""
+  company_url = "https://www.facebook.com/biobio.one/"
   location = "Dhaka, Bangladesh"
   date_start = "2016-06-01"
   date_end = ""
+  description = """
+  Bio-Bio-1 is a voluntary not-for-profit organization, formed by some passionate individuals in late 2008 to learn Bioinformatics for making some senses from the Enigma of Life. It also aims to spread the excitement of Research and Development by infecting the like-minded individuals (especially the young ones) through several programs (i.e.: weekly Study Circles). I was an active participant of their weekly study circle and learned a lot from them, especially I learned bioinformatics techniques with help of Python.
+  """
 +++
