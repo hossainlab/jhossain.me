@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contents | Jubayer Hossain</title>
+    <link>/content/</link>
+      <atom:link href="/content/index.xml" rel="self" type="application/rss+xml" />
+    <description>Contents</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Jubayer Hossain</copyright><lastBuildDate>Fri, 11 Dec 2020 21:42:22 +0600</lastBuildDate>
+    <image>
+      <url>/media/admin.jpg</url>
+      <title>Contents</title>
+      <link>/content/</link>
+    </image>
+    
+    <item>
+      <title>R Programming</title>
+      <link>/content/post/r-programming/</link>
+      <pubDate>Fri, 11 Dec 2020 21:42:22 +0600</pubDate>
+      <guid>/content/post/r-programming/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

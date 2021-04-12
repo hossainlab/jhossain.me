@@ -9,22 +9,25 @@
   weight = 1
 
 # [[main]]
-#   name = "Posts"
-#   url = "#posts"
-#   weight = 20
+# name = "Posts"
+# url = "#posts"
+# weight = 2
+
+# [[main]]
+#   name = "Courses"  # Title of the link.
+#   url = "/courses"  # Widget Page folder name.
+#   weight = 3  # Position of the link in the navigation bar.
+  
+# [[main]]
+# name = "MOOCs"
+# url = "/moocs"
+# weight = 5
+
 
 [[main]]
-  name = "Notes"  # Title of the link.
-  url = "notes/"  # Widget Page folder name.
-  weight = 4  # Position of the link in the navigation bar.
-
-
-
-#
-# [[main]]
-#   name = "Projects"
-#   url = "#projects"
-#   weight = 30
+name = "Projects"
+url = "#projects"
+weight = 5
 
 # [[main]]
 #   name = "Publications"

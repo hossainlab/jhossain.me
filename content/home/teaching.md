@@ -44,5 +44,6 @@ date_format = "Jan 2006"
   date_end = ""
   description = """  
   * Chemistry(Secondary & Higher Secondary)
+  * Physics(Secondary & Higher Secondary)
   """
 +++

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Public Health | Jubayer Hossain</title>
+    <link>/tag/public-health/</link>
+      <atom:link href="/tag/public-health/index.xml" rel="self" type="application/rss+xml" />
+    <description>Public Health</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>Jubayer Hossain</copyright><lastBuildDate>Thu, 18 Mar 2021 22:41:58 +0600</lastBuildDate>
+    <image>
+      <url>/media/admin.jpg</url>
+      <title>Public Health</title>
+      <link>/tag/public-health/</link>
+    </image>
+    
+    <item>
+      <title>Antibiotic Resistance</title>
+      <link>/project/antibiotics/</link>
+      <pubDate>Thu, 18 Mar 2021 22:41:58 +0600</pubDate>
+      <guid>/project/antibiotics/</guid>
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;To assess the possibility of success of anti-microbial stewardship program.&lt;/p&gt;
+&lt;h2 id=&#34;expected-outcomes&#34;&gt;Expected Outcomes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;To learn about current perceptions about antibiotic use and resistance so that an effective community engagement strategy could be devised.&lt;/li&gt;
+&lt;li&gt;A preliminary study would show knowledge about a global issue among graduates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;time-duration&#34;&gt;Time Duration&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;2 years&lt;/li&gt;
+&lt;li&gt;Data collection and paper submission after every 6 months.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;supervisor&#34;&gt;Supervisor&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.researchgate.net/profile/Syeda-Tasneem-Towhid&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Syeda Tasneem Towhid, Ph.D&lt;/a&gt;,
+Assistant Professor,
+&lt;a href=&#34;https://jnu.ac.bd/dept/portal/web/microbiology&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Department of Microbiology&lt;/a&gt;,
+Jagannath University, Dhaka-1100&lt;/p&gt;
+&lt;p&gt;Project Page - &lt;a href=&#34;https://www.researchgate.net/project/Antibiotic-Resistance-50&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Researchgate&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Distance Learning</title>
+      <link>/project/distance-learning/</link>
+      <pubDate>Thu, 18 Mar 2021 22:41:58 +0600</pubDate>
+      <guid>/project/distance-learning/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
