@@ -13,21 +13,39 @@
 # url = "#posts"
 # weight = 2
 
+[[main]]
+  name = "Research"  # Title of the link.
+  url = "#publications"  # Widget Page folder name.
+  weight = 2  # Position of the link in the navigation bar.
+
 # [[main]]
-#   name = "Courses"  # Title of the link.
-#   url = "/courses"  # Widget Page folder name.
-#   weight = 3  # Position of the link in the navigation bar.
-  
-# [[main]]
-# name = "MOOCs"
-# url = "/moocs"
-# weight = 5
+# name = "Projects"
+# url = "#projects"
+# weight = 3
 
 
 [[main]]
-name = "Projects"
-url = "#projects"
+name = "Python"
+parent = "Programming"
+url = "/python"
+weight = 4
+
+[[main]]
+name = "R"
+parent = "Programming"
+url = "/r-programming"
+weight = 4
+
+[[main]]
+name = "ToolBox"
+url = "/tools"
 weight = 5
+
+[[main]]
+name = "Resources"
+url = "/resources"
+weight = 6
+
 
 # [[main]]
 #   name = "Publications"
@@ -37,7 +55,7 @@ weight = 5
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 60
+  weight = 6
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/media/cv.pdf` and uncomment the lines below.
@@ -45,3 +63,9 @@ weight = 5
 #    name = "CV"
 #    url = "media/cv.pdf"
 #    weight = 70
+
+
+[[main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 7
