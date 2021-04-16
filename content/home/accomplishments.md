@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = false  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
-title = "Accomplish&shy;ments"
+title = "Education"
 subtitle = ""
 
 # Date format
@@ -68,6 +68,39 @@ date_format = "Jan 2006"
   date_end = "2020-06-12"
   description = ""
 
+  [[item]]
+  organization = "Coursera"
+  organization_url = "https://www.coursera.org/"
+  title = "Exploratory Data Analysis with Seaborn"
+  url = "https://www.coursera.org/learn/python"
+  certificate_url = "https://www.coursera.org/account/accomplishments/certificate/U6FAPRHMBFD5"
+  date_start = "2020-05-01"
+  date_end = "2020-05-10"
+  description = ""
+
+
+
+[[item]]
+  organization = "Coursera"
+  organization_url = "https://www.coursera.org/"
+  title = "Statistical Data Visualization with Seaborn"
+  url = "https://www.coursera.org/learn/python"
+  certificate_url = "https://www.coursera.org/account/accomplishments/certificate/TXF8L74HFDLD"
+  date_start = "2020-09-01"
+  date_end = "2020-09-10"
+  description = ""
+
+[[item]]
+  organization = "Coursera"
+  organization_url = "https://www.coursera.org/"
+  title = "Create Interactive Dashboards with Streamlit and Python"
+  url = "https://www.coursera.org/learn/python"
+  certificate_url = "https://www.coursera.org/account/accomplishments/certificate/E7PM4S8NJBEB"
+  date_start = "2020-05-01"
+  date_end = "2020-05-10"
+  description = ""
+
+
 
 [[item]]
   organization = "Coursera"
@@ -80,14 +113,5 @@ date_format = "Jan 2006"
   description = ""
 
 
-  [[item]]
-  organization = "Coursera"
-  organization_url = "https://www.coursera.org/"
-  title = "Exploratory Data Analysis with Seaborn"
-  url = "https://www.coursera.org/learn/python"
-  certificate_url = "https://www.coursera.org/account/accomplishments/certificate/U6FAPRHMBFD5"
-  date_start = "2020-05-01"
-  date_end = "2020-05-10"
-  description = ""
 
 +++

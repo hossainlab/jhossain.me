@@ -18,10 +18,11 @@
   url = "#publications"  # Widget Page folder name.
   weight = 2  # Position of the link in the navigation bar.
 
-# [[main]]
-# name = "Projects"
-# url = "#projects"
-# weight = 3
+
+[[main]]
+name = "Projects"
+url = "#projects"
+weight = 3
 
 
 [[main]]
@@ -30,21 +31,21 @@ parent = "Programming"
 url = "/python"
 weight = 4
 
-[[main]]
-name = "R"
-parent = "Programming"
-url = "/r-programming"
-weight = 4
+# [[main]]
+# name = "R"
+# parent = "Programming"
+# url = "/r-programming"
+# weight = 4
 
-[[main]]
-name = "ToolBox"
-url = "/tools"
-weight = 5
+# [[main]]
+# name = "ToolBox"
+# url = "/tools"
+# weight = 5
 
-[[main]]
-name = "Resources"
-url = "/resources"
-weight = 6
+# [[main]]
+# name = "Resources"
+# url = "/resources"
+# weight = 6
 
 
 # [[main]]
@@ -69,3 +70,9 @@ weight = 6
   name = "Contact"
   url = "#contact"
   weight = 7
+
+
+# [[main]]
+# name = "Education"
+# url = "/accomplishments"
+# weight = 8
