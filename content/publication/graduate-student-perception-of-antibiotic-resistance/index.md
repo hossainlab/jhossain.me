@@ -1,14 +1,14 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Public Perception on the Spread of Antibiotic Resistance in Bangladesh"
+title: "Graduate Student Perception on the Spread of Antibiotic Resistance in Bangladesh"
 authors: [Syeda Tasneem Towhid, Md. Jubayer Hossain, Sumona
-Akter, Md. Atik Shariar Sammo, Sharif Hossain, Sumaiya Akter Mukta, Morsheda Munia, Mohammad Nahian]
-date: 2021-04-16T06:38:12+06:00
+Akter, Md. Atik Shariar Sammo]
+date: 2021-04-19T00:31:46+06:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-04-16T06:38:12+06:00
+publishDate: 2021-04-19T00:31:46+06:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -23,9 +23,9 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "The main objective of this survey is to improve awareness and understanding of antimicrobial resistance through effective communication, education and training."
+summary: "To learn about current perceptions about antibiotic use and resistance so that an effective community engagement strategy could be devised. A preliminary study would show knowledge about a global issue among graduates."
 
-tags: ["antibiotics", "antimicrobial resistance", "knowledge of antibiotics"]
+tags: []
 categories: []
 featured: false
 

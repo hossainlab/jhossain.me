@@ -9285,3 +9285,8 @@ div.chart {
  **************************************************/
 html[dir="rtl"] body {
   text-align: right; }
+
+.dropdown-menu,
+nav#navbar-main li.nav-item {
+  font-size: 16px;
+  font-weight: normal; }

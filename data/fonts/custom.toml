@@ -1,0 +1,11 @@
+# Font style metadata
+name = "custom"
+
+# Optional Google font URL
+google_fonts = "Lato:400,700|Roboto|Roboto+Mono"
+
+# Font families
+heading_font = "Lato"
+body_font = "Roboto"
+nav_font = "Lato"
+mono_font = "Roboto Mono"
