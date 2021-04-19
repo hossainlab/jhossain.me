@@ -1,0 +1,312 @@
+---
+title: "Data Management with R: An Inroduction to dplyr"
+author: "Jubayer Hossain"
+date: "21 February, 2021"
+categories: ["R Programming"]
+summary: dplyr is a new package which provides a set of tools for efficiently manipulating datasets in R.
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment=NA, fig.align = "center", fig.width = 8, fig.height = 4)
+```
+
+## What is `dplyr`? {.t}
+- The `dplyr` package was developed by Hadley Wickham of RStudio. 
+- `dplyr` is a new package which provides a set of tools for efficiently manipulating datasets in R.
+- `dplyr` is the next iteration of `plyr` , focussing on only data frames. 
+- With `dplyr` , anything you can do to a local data frame you can also do to a remote database table.
+
+## `dplyr` Functionality {.t}
+- Five basic verbs: `filter`, `select`, `arrange`, `mutate`, `summarise` and `groub_by`
+- Can work with data stored in databases and data tables
+- Joins: inner join, left join, semi-join, anti-join
+- Window functions for calculating ranking, offsets, and more
+- Better than plyr if you’re only working with data frames (though it doesn’t yet duplicate all of the plyr functionality)
+
+## Why `dplyr`? {.t}
+- Great for data exploration and transformation
+- Intuitive to write and easy to read, especially when using the “chaining” syntax (covered below)
+- Fast on data frames
+
+## `dplyr` Grammar{.t}
+- `select`: return a subset of the column of a data franme, using a flexible notation. 
+- `filter`: extract a subset of rows from a data frame based on logical conditions.
+- `arrange`: reorder rows of data frame 
+- `mutate`: add new variables/columns or transform existing variables. 
+- `summarise/summarize`: generate summary statistics of different variables in the data frame, possibly within strata. 
+- `%>%` "pipe" operator used to connect multiple verb actions together into a pipeline. 
+
+## Installing `dplyr` {.t}
+```r
+install.packages('dplyr')
+```
+
+## Loading Data: The Gapminder Dataset{.t}
+```r
+# Install gapminder dataset 
+install.packages('gapminder')
+```
+```{r}
+# Load gapminder dataset 
+library(gapminder)
+```
+
+## Exploring the Gapminder Dataset {.t}
+```{r}
+# Examine first few rows 
+head(gapminder)
+```
+```{r}
+# Examine last few rows 
+tail(gapminder)
+```
+
+```{r}
+# Dimensions 
+dim(gapminder)
+
+# Colnames 
+names(gapminder)
+```
+```{r}
+# Data Structures
+str(gapminder)
+```
+```{r}
+# Summary 
+summary(gapminder)
+```
+
+## Command Structure (for all dplyr verbs){.t}
+- first argument is a data frame
+- return value is a data frame
+- nothing is modified in place
+- Note: dplyr generally does not preserve row names
+
+## Load `dplyr` Package 
+```{r}
+# Load dplyr 
+library(dplyr)
+```
+
+## `select`: Pick Single Column by Name{.t}
+```{r}
+select(gapminder, country)
+```
+## `select`: Pick Multiple Columns by Name{.t}
+```{r}
+select(gapminder, country, continent, year)
+```
+
+
+## `select`: Removing Single Column{.t}
+```{r}
+select(gapminder, - gdpPercap)
+```
+## `select`: Removing Multiple Columns 
+```{r}
+select(gapminder, -c(pop,  gdpPercap))
+```
+## `select`: Select Column Using : (Range){.t}
+```{r}
+select(gapminder, country:year)
+```
+## `select`: Select Single Column Using "`contains `"{.t}
+```{r}
+select(gapminder, contains("c"))
+```
+
+## `select`: Select Multiple Columns Using "`contains `"{.t}
+```{r}
+select(gapminder, contains("c"), contains('g'))
+```
+
+## `select`: Select Column Using "`starts_with`" {.t}
+```{r}
+select(gapminder, starts_with('c'))
+```
+## `select`: Select Column Using "`ends_with`"{.t}
+```{r}
+select(gapminder, ends_with('p'))
+```
+## Chaining Method: The Pipe(%>%) Operator{.t}
+```{r}
+gapminder %>% 
+  select(country, continent, year) %>% 
+  head() 
+```
+## The Count Verb{.t}
+```{r}
+gapminder %>% 
+  count()
+```
+## Count Variable{.t}
+```{r}
+gapminder %>% 
+  count(country)
+```
+
+## Count and Sort{.t}
+```{r}
+gapminder %>% 
+  count(country, sort = TRUE)
+```
+
+## Count Population{.t}
+```{r}
+gapminder %>% 
+  select(country, pop) %>% 
+  count(country, wt = pop, sort = TRUE)
+
+```
+
+
+## filter: Equality(`"=="`){.t}
+```{r}
+filter(gapminder, country == "Bangladesh")
+```
+## filter: Inequality(`"!="`){.t}
+```{r}
+filter(gapminder, country != "Bangladesh")
+```
+
+## filter: Greater(`">"`){.t}
+```{r}
+filter(gapminder, gdpPercap > 800)
+```
+
+## filter: Greater or Equal(`">="`){.t}
+```{r}
+filter(gapminder, gdpPercap >= 800)
+```
+
+## filter: Less(`"<"`){.t}
+```{r}
+filter(gapminder, gdpPercap < 800)
+```
+
+## filter: Less or Equal(`"<="`){.t}
+```{r}
+filter(gapminder, gdpPercap <= 800)
+```
+
+## filter: Logical AND(`"&"`){.t}
+```{r}
+filter(gapminder, country=="Bangladesh" & gdpPercap > 800)
+```
+
+## filter: Logical OR(`"|"`){.t}
+```{r}
+filter(gapminder, country == "Bangladesh" |  gdpPercap > 800)
+```
+
+## filter: The `"%in%"` Operator{.t}
+```{r}
+filter(gapminder, country %in% c("Bangladesh", "Australia"))
+```
+
+## `mutate`: Creating New Column{.t}
+```{r}
+gapminder %>% 
+  mutate(gdp = gdpPercap * pop) %>% 
+  head() 
+```
+
+```{r}
+# GDP in Million 
+gapminder %>% 
+  mutate(gdp = gdpPercap * pop / 10^6) %>% 
+  head() 
+```
+
+## `arrange` : Reorder Rows{.t}
+```{r}
+gapminder %>% 
+  select(country, pop) %>% 
+  arrange(pop) %>% 
+  head() 
+```
+
+## `arrange` : Reorder Rows(Descending){.t}
+```{r}
+gapminder %>% 
+  select(country, pop) %>% 
+  # descending order 
+  arrange(desc(pop)) %>% 
+  head() 
+```
+
+## `group_by`: Grouping Data 
+```{r}
+gapminder %>% 
+  group_by(continent) %>% 
+  head()
+```
+
+## `group_by` and `summarize` {.t}
+```{r}
+gapminder %>% 
+  summarize(total_pop = sum(pop))
+```
+
+## Aggregate and summarize{.t}
+```{r}
+gapminder %>% 
+  summarize(total_population = sum(pop), 
+            avg_gdppercap = mean(gdpPercap))
+```
+
+## `summarise`: Sum{.t} 
+```{r}
+gapminder %>% 
+  group_by(continent) %>% 
+  summarise(pop = sum(pop))
+```
+
+## `summarise`: Sum{.t} 
+```{r}
+gapminder %>% 
+  group_by(continent) %>% 
+  # In Million
+  summarise(pop = sum(pop) / 10^6)
+```
+
+## `summarise`: Maximum{.t}
+```{r}
+gapminder %>% 
+  group_by(continent) %>% 
+  summarise(max_liexp = max(lifeExp))
+```
+
+## Summary Functions{.t}
+```r
+mean() 
+sum() 
+median() 
+min() 
+max() 
+n()
+```
+
+## Aggregate within Groups{.t}
+```{r}
+gapminder %>% 
+  group_by(continent) %>% 
+  summarize(total_pop = sum(pop),
+            avg_lifeexp = mean(lifeExp))
+```
+
+## The `top_n` Verb 
+```{r}
+gapminder %>% 
+  group_by(continent) %>% 
+  top_n(1, pop)
+```
+
+## `rename`: Renaming Column{.t}
+```{r}
+gapminder %>% 
+  rename(population = pop) %>% 
+  head() 
+```

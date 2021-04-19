@@ -1,0 +1,732 @@
+---
+title: "Data Management with R: An Inroduction to dplyr"
+author: "Jubayer Hossain"
+date: "21 February, 2021"
+categories: ["R Programming"]
+summary: dplyr is a new package which provides a set of tools for efficiently manipulating datasets in R.
+---
+
+
+
+<div id="what-is-dplyr" class="section level2 t">
+<h2>What is <code>dplyr</code>?</h2>
+<ul>
+<li>The <code>dplyr</code> package was developed by Hadley Wickham of RStudio.</li>
+<li><code>dplyr</code> is a new package which provides a set of tools for efficiently manipulating datasets in R.</li>
+<li><code>dplyr</code> is the next iteration of <code>plyr</code> , focussing on only data frames.</li>
+<li>With <code>dplyr</code> , anything you can do to a local data frame you can also do to a remote database table.</li>
+</ul>
+</div>
+<div id="dplyr-functionality" class="section level2 t">
+<h2><code>dplyr</code> Functionality</h2>
+<ul>
+<li>Five basic verbs: <code>filter</code>, <code>select</code>, <code>arrange</code>, <code>mutate</code>, <code>summarise</code> and <code>groub_by</code></li>
+<li>Can work with data stored in databases and data tables</li>
+<li>Joins: inner join, left join, semi-join, anti-join</li>
+<li>Window functions for calculating ranking, offsets, and more</li>
+<li>Better than plyr if you’re only working with data frames (though it doesn’t yet duplicate all of the plyr functionality)</li>
+</ul>
+</div>
+<div id="why-dplyr" class="section level2 t">
+<h2>Why <code>dplyr</code>?</h2>
+<ul>
+<li>Great for data exploration and transformation</li>
+<li>Intuitive to write and easy to read, especially when using the “chaining” syntax (covered below)</li>
+<li>Fast on data frames</li>
+</ul>
+</div>
+<div id="dplyr-grammar" class="section level2 t">
+<h2><code>dplyr</code> Grammar</h2>
+<ul>
+<li><code>select</code>: return a subset of the column of a data franme, using a flexible notation.</li>
+<li><code>filter</code>: extract a subset of rows from a data frame based on logical conditions.</li>
+<li><code>arrange</code>: reorder rows of data frame</li>
+<li><code>mutate</code>: add new variables/columns or transform existing variables.</li>
+<li><code>summarise/summarize</code>: generate summary statistics of different variables in the data frame, possibly within strata.</li>
+<li><code>%&gt;%</code> “pipe” operator used to connect multiple verb actions together into a pipeline.</li>
+</ul>
+</div>
+<div id="installing-dplyr" class="section level2 t">
+<h2>Installing <code>dplyr</code></h2>
+<pre class="r"><code>install.packages(&#39;dplyr&#39;)</code></pre>
+</div>
+<div id="loading-data-the-gapminder-dataset" class="section level2 t">
+<h2>Loading Data: The Gapminder Dataset</h2>
+<pre class="r"><code># Install gapminder dataset 
+install.packages(&#39;gapminder&#39;)</code></pre>
+<pre class="r"><code># Load gapminder dataset 
+library(gapminder)</code></pre>
+</div>
+<div id="exploring-the-gapminder-dataset" class="section level2 t">
+<h2>Exploring the Gapminder Dataset</h2>
+<pre class="r"><code># Examine first few rows 
+head(gapminder)</code></pre>
+<pre><code># A tibble: 6 x 6
+  country     continent  year lifeExp      pop gdpPercap
+  &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+1 Afghanistan Asia       1952    28.8  8425333      779.
+2 Afghanistan Asia       1957    30.3  9240934      821.
+3 Afghanistan Asia       1962    32.0 10267083      853.
+4 Afghanistan Asia       1967    34.0 11537966      836.
+5 Afghanistan Asia       1972    36.1 13079460      740.
+6 Afghanistan Asia       1977    38.4 14880372      786.</code></pre>
+<pre class="r"><code># Examine last few rows 
+tail(gapminder)</code></pre>
+<pre><code># A tibble: 6 x 6
+  country  continent  year lifeExp      pop gdpPercap
+  &lt;fct&gt;    &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+1 Zimbabwe Africa     1982    60.4  7636524      789.
+2 Zimbabwe Africa     1987    62.4  9216418      706.
+3 Zimbabwe Africa     1992    60.4 10704340      693.
+4 Zimbabwe Africa     1997    46.8 11404948      792.
+5 Zimbabwe Africa     2002    40.0 11926563      672.
+6 Zimbabwe Africa     2007    43.5 12311143      470.</code></pre>
+<pre class="r"><code># Dimensions 
+dim(gapminder)</code></pre>
+<pre><code>[1] 1704    6</code></pre>
+<pre class="r"><code># Colnames 
+names(gapminder)</code></pre>
+<pre><code>[1] &quot;country&quot;   &quot;continent&quot; &quot;year&quot;      &quot;lifeExp&quot;   &quot;pop&quot;       &quot;gdpPercap&quot;</code></pre>
+<pre class="r"><code># Data Structures
+str(gapminder)</code></pre>
+<pre><code>tibble [1,704 × 6] (S3: tbl_df/tbl/data.frame)
+ $ country  : Factor w/ 142 levels &quot;Afghanistan&quot;,..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ continent: Factor w/ 5 levels &quot;Africa&quot;,&quot;Americas&quot;,..: 3 3 3 3 3 3 3 3 3 3 ...
+ $ year     : int [1:1704] 1952 1957 1962 1967 1972 1977 1982 1987 1992 1997 ...
+ $ lifeExp  : num [1:1704] 28.8 30.3 32 34 36.1 ...
+ $ pop      : int [1:1704] 8425333 9240934 10267083 11537966 13079460 14880372 12881816 13867957 16317921 22227415 ...
+ $ gdpPercap: num [1:1704] 779 821 853 836 740 ...</code></pre>
+<pre class="r"><code># Summary 
+summary(gapminder)</code></pre>
+<pre><code>        country        continent        year         lifeExp     
+ Afghanistan:  12   Africa  :624   Min.   :1952   Min.   :23.60  
+ Albania    :  12   Americas:300   1st Qu.:1966   1st Qu.:48.20  
+ Algeria    :  12   Asia    :396   Median :1980   Median :60.71  
+ Angola     :  12   Europe  :360   Mean   :1980   Mean   :59.47  
+ Argentina  :  12   Oceania : 24   3rd Qu.:1993   3rd Qu.:70.85  
+ Australia  :  12                  Max.   :2007   Max.   :82.60  
+ (Other)    :1632                                                
+      pop              gdpPercap       
+ Min.   :6.001e+04   Min.   :   241.2  
+ 1st Qu.:2.794e+06   1st Qu.:  1202.1  
+ Median :7.024e+06   Median :  3531.8  
+ Mean   :2.960e+07   Mean   :  7215.3  
+ 3rd Qu.:1.959e+07   3rd Qu.:  9325.5  
+ Max.   :1.319e+09   Max.   :113523.1  
+                                       </code></pre>
+</div>
+<div id="command-structure-for-all-dplyr-verbs" class="section level2 t">
+<h2>Command Structure (for all dplyr verbs)</h2>
+<ul>
+<li>first argument is a data frame</li>
+<li>return value is a data frame</li>
+<li>nothing is modified in place</li>
+<li>Note: dplyr generally does not preserve row names</li>
+</ul>
+</div>
+<div id="load-dplyr-package" class="section level2">
+<h2>Load <code>dplyr</code> Package</h2>
+<pre class="r"><code># Load dplyr 
+library(dplyr)</code></pre>
+<pre><code>
+Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>The following objects are masked from &#39;package:stats&#39;:
+
+    filter, lag</code></pre>
+<pre><code>The following objects are masked from &#39;package:base&#39;:
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div id="select-pick-single-column-by-name" class="section level2 t">
+<h2><code>select</code>: Pick Single Column by Name</h2>
+<pre class="r"><code>select(gapminder, country)</code></pre>
+<pre><code># A tibble: 1,704 x 1
+   country    
+   &lt;fct&gt;      
+ 1 Afghanistan
+ 2 Afghanistan
+ 3 Afghanistan
+ 4 Afghanistan
+ 5 Afghanistan
+ 6 Afghanistan
+ 7 Afghanistan
+ 8 Afghanistan
+ 9 Afghanistan
+10 Afghanistan
+# … with 1,694 more rows</code></pre>
+</div>
+<div id="select-pick-multiple-columns-by-name" class="section level2 t">
+<h2><code>select</code>: Pick Multiple Columns by Name</h2>
+<pre class="r"><code>select(gapminder, country, continent, year)</code></pre>
+<pre><code># A tibble: 1,704 x 3
+   country     continent  year
+   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;
+ 1 Afghanistan Asia       1952
+ 2 Afghanistan Asia       1957
+ 3 Afghanistan Asia       1962
+ 4 Afghanistan Asia       1967
+ 5 Afghanistan Asia       1972
+ 6 Afghanistan Asia       1977
+ 7 Afghanistan Asia       1982
+ 8 Afghanistan Asia       1987
+ 9 Afghanistan Asia       1992
+10 Afghanistan Asia       1997
+# … with 1,694 more rows</code></pre>
+</div>
+<div id="select-removing-single-column" class="section level2 t">
+<h2><code>select</code>: Removing Single Column</h2>
+<pre class="r"><code>select(gapminder, - gdpPercap)</code></pre>
+<pre><code># A tibble: 1,704 x 5
+   country     continent  year lifeExp      pop
+   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;
+ 1 Afghanistan Asia       1952    28.8  8425333
+ 2 Afghanistan Asia       1957    30.3  9240934
+ 3 Afghanistan Asia       1962    32.0 10267083
+ 4 Afghanistan Asia       1967    34.0 11537966
+ 5 Afghanistan Asia       1972    36.1 13079460
+ 6 Afghanistan Asia       1977    38.4 14880372
+ 7 Afghanistan Asia       1982    39.9 12881816
+ 8 Afghanistan Asia       1987    40.8 13867957
+ 9 Afghanistan Asia       1992    41.7 16317921
+10 Afghanistan Asia       1997    41.8 22227415
+# … with 1,694 more rows</code></pre>
+</div>
+<div id="select-removing-multiple-columns" class="section level2">
+<h2><code>select</code>: Removing Multiple Columns</h2>
+<pre class="r"><code>select(gapminder, -c(pop,  gdpPercap))</code></pre>
+<pre><code># A tibble: 1,704 x 4
+   country     continent  year lifeExp
+   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;
+ 1 Afghanistan Asia       1952    28.8
+ 2 Afghanistan Asia       1957    30.3
+ 3 Afghanistan Asia       1962    32.0
+ 4 Afghanistan Asia       1967    34.0
+ 5 Afghanistan Asia       1972    36.1
+ 6 Afghanistan Asia       1977    38.4
+ 7 Afghanistan Asia       1982    39.9
+ 8 Afghanistan Asia       1987    40.8
+ 9 Afghanistan Asia       1992    41.7
+10 Afghanistan Asia       1997    41.8
+# … with 1,694 more rows</code></pre>
+</div>
+<div id="select-select-column-using-range" class="section level2 t">
+<h2><code>select</code>: Select Column Using : (Range)</h2>
+<pre class="r"><code>select(gapminder, country:year)</code></pre>
+<pre><code># A tibble: 1,704 x 3
+   country     continent  year
+   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;
+ 1 Afghanistan Asia       1952
+ 2 Afghanistan Asia       1957
+ 3 Afghanistan Asia       1962
+ 4 Afghanistan Asia       1967
+ 5 Afghanistan Asia       1972
+ 6 Afghanistan Asia       1977
+ 7 Afghanistan Asia       1982
+ 8 Afghanistan Asia       1987
+ 9 Afghanistan Asia       1992
+10 Afghanistan Asia       1997
+# … with 1,694 more rows</code></pre>
+</div>
+<div id="select-select-single-column-using-contains" class="section level2 t">
+<h2><code>select</code>: Select Single Column Using “<code>contains</code>”</h2>
+<pre class="r"><code>select(gapminder, contains(&quot;c&quot;))</code></pre>
+<pre><code># A tibble: 1,704 x 3
+   country     continent gdpPercap
+   &lt;fct&gt;       &lt;fct&gt;         &lt;dbl&gt;
+ 1 Afghanistan Asia           779.
+ 2 Afghanistan Asia           821.
+ 3 Afghanistan Asia           853.
+ 4 Afghanistan Asia           836.
+ 5 Afghanistan Asia           740.
+ 6 Afghanistan Asia           786.
+ 7 Afghanistan Asia           978.
+ 8 Afghanistan Asia           852.
+ 9 Afghanistan Asia           649.
+10 Afghanistan Asia           635.
+# … with 1,694 more rows</code></pre>
+</div>
+<div id="select-select-multiple-columns-using-contains" class="section level2 t">
+<h2><code>select</code>: Select Multiple Columns Using “<code>contains</code>”</h2>
+<pre class="r"><code>select(gapminder, contains(&quot;c&quot;), contains(&#39;g&#39;))</code></pre>
+<pre><code># A tibble: 1,704 x 3
+   country     continent gdpPercap
+   &lt;fct&gt;       &lt;fct&gt;         &lt;dbl&gt;
+ 1 Afghanistan Asia           779.
+ 2 Afghanistan Asia           821.
+ 3 Afghanistan Asia           853.
+ 4 Afghanistan Asia           836.
+ 5 Afghanistan Asia           740.
+ 6 Afghanistan Asia           786.
+ 7 Afghanistan Asia           978.
+ 8 Afghanistan Asia           852.
+ 9 Afghanistan Asia           649.
+10 Afghanistan Asia           635.
+# … with 1,694 more rows</code></pre>
+</div>
+<div id="select-select-column-using-starts_with" class="section level2 t">
+<h2><code>select</code>: Select Column Using “<code>starts_with</code>”</h2>
+<pre class="r"><code>select(gapminder, starts_with(&#39;c&#39;))</code></pre>
+<pre><code># A tibble: 1,704 x 2
+   country     continent
+   &lt;fct&gt;       &lt;fct&gt;    
+ 1 Afghanistan Asia     
+ 2 Afghanistan Asia     
+ 3 Afghanistan Asia     
+ 4 Afghanistan Asia     
+ 5 Afghanistan Asia     
+ 6 Afghanistan Asia     
+ 7 Afghanistan Asia     
+ 8 Afghanistan Asia     
+ 9 Afghanistan Asia     
+10 Afghanistan Asia     
+# … with 1,694 more rows</code></pre>
+</div>
+<div id="select-select-column-using-ends_with" class="section level2 t">
+<h2><code>select</code>: Select Column Using “<code>ends_with</code>”</h2>
+<pre class="r"><code>select(gapminder, ends_with(&#39;p&#39;))</code></pre>
+<pre><code># A tibble: 1,704 x 3
+   lifeExp      pop gdpPercap
+     &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+ 1    28.8  8425333      779.
+ 2    30.3  9240934      821.
+ 3    32.0 10267083      853.
+ 4    34.0 11537966      836.
+ 5    36.1 13079460      740.
+ 6    38.4 14880372      786.
+ 7    39.9 12881816      978.
+ 8    40.8 13867957      852.
+ 9    41.7 16317921      649.
+10    41.8 22227415      635.
+# … with 1,694 more rows</code></pre>
+</div>
+<div id="chaining-method-the-pipe-operator" class="section level2 t">
+<h2>Chaining Method: The Pipe(%&gt;%) Operator</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  select(country, continent, year) %&gt;% 
+  head() </code></pre>
+<pre><code># A tibble: 6 x 3
+  country     continent  year
+  &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;
+1 Afghanistan Asia       1952
+2 Afghanistan Asia       1957
+3 Afghanistan Asia       1962
+4 Afghanistan Asia       1967
+5 Afghanistan Asia       1972
+6 Afghanistan Asia       1977</code></pre>
+</div>
+<div id="the-count-verb" class="section level2 t">
+<h2>The Count Verb</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  count()</code></pre>
+<pre><code># A tibble: 1 x 1
+      n
+  &lt;int&gt;
+1  1704</code></pre>
+</div>
+<div id="count-variable" class="section level2 t">
+<h2>Count Variable</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  count(country)</code></pre>
+<pre><code># A tibble: 142 x 2
+   country         n
+ * &lt;fct&gt;       &lt;int&gt;
+ 1 Afghanistan    12
+ 2 Albania        12
+ 3 Algeria        12
+ 4 Angola         12
+ 5 Argentina      12
+ 6 Australia      12
+ 7 Austria        12
+ 8 Bahrain        12
+ 9 Bangladesh     12
+10 Belgium        12
+# … with 132 more rows</code></pre>
+</div>
+<div id="count-and-sort" class="section level2 t">
+<h2>Count and Sort</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  count(country, sort = TRUE)</code></pre>
+<pre><code># A tibble: 142 x 2
+   country         n
+   &lt;fct&gt;       &lt;int&gt;
+ 1 Afghanistan    12
+ 2 Albania        12
+ 3 Algeria        12
+ 4 Angola         12
+ 5 Argentina      12
+ 6 Australia      12
+ 7 Austria        12
+ 8 Bahrain        12
+ 9 Bangladesh     12
+10 Belgium        12
+# … with 132 more rows</code></pre>
+</div>
+<div id="count-population" class="section level2 t">
+<h2>Count Population</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  select(country, pop) %&gt;% 
+  count(country, wt = pop, sort = TRUE)</code></pre>
+<pre><code># A tibble: 142 x 2
+   country                 n
+   &lt;fct&gt;               &lt;dbl&gt;
+ 1 China         11497920623
+ 2 India          8413568878
+ 3 United States  2738534790
+ 4 Indonesia      1779874000
+ 5 Brazil         1467745520
+ 6 Japan          1341105696
+ 7 Pakistan       1124200629
+ 8 Bangladesh     1089064744
+ 9 Germany         930564520
+10 Nigeria         884496214
+# … with 132 more rows</code></pre>
+</div>
+<div id="filter-equality" class="section level2 t">
+<h2>filter: Equality(<code>"=="</code>)</h2>
+<pre class="r"><code>filter(gapminder, country == &quot;Bangladesh&quot;)</code></pre>
+<pre><code># A tibble: 12 x 6
+   country    continent  year lifeExp       pop gdpPercap
+   &lt;fct&gt;      &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;     &lt;int&gt;     &lt;dbl&gt;
+ 1 Bangladesh Asia       1952    37.5  46886859      684.
+ 2 Bangladesh Asia       1957    39.3  51365468      662.
+ 3 Bangladesh Asia       1962    41.2  56839289      686.
+ 4 Bangladesh Asia       1967    43.5  62821884      721.
+ 5 Bangladesh Asia       1972    45.3  70759295      630.
+ 6 Bangladesh Asia       1977    46.9  80428306      660.
+ 7 Bangladesh Asia       1982    50.0  93074406      677.
+ 8 Bangladesh Asia       1987    52.8 103764241      752.
+ 9 Bangladesh Asia       1992    56.0 113704579      838.
+10 Bangladesh Asia       1997    59.4 123315288      973.
+11 Bangladesh Asia       2002    62.0 135656790     1136.
+12 Bangladesh Asia       2007    64.1 150448339     1391.</code></pre>
+</div>
+<div id="filter-inequality" class="section level2 t">
+<h2>filter: Inequality(<code>"!="</code>)</h2>
+<pre class="r"><code>filter(gapminder, country != &quot;Bangladesh&quot;)</code></pre>
+<pre><code># A tibble: 1,692 x 6
+   country     continent  year lifeExp      pop gdpPercap
+   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+ 1 Afghanistan Asia       1952    28.8  8425333      779.
+ 2 Afghanistan Asia       1957    30.3  9240934      821.
+ 3 Afghanistan Asia       1962    32.0 10267083      853.
+ 4 Afghanistan Asia       1967    34.0 11537966      836.
+ 5 Afghanistan Asia       1972    36.1 13079460      740.
+ 6 Afghanistan Asia       1977    38.4 14880372      786.
+ 7 Afghanistan Asia       1982    39.9 12881816      978.
+ 8 Afghanistan Asia       1987    40.8 13867957      852.
+ 9 Afghanistan Asia       1992    41.7 16317921      649.
+10 Afghanistan Asia       1997    41.8 22227415      635.
+# … with 1,682 more rows</code></pre>
+</div>
+<div id="filter-greater" class="section level2 t">
+<h2>filter: Greater(<code>"&gt;"</code>)</h2>
+<pre class="r"><code>filter(gapminder, gdpPercap &gt; 800)</code></pre>
+<pre><code># A tibble: 1,460 x 6
+   country     continent  year lifeExp      pop gdpPercap
+   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+ 1 Afghanistan Asia       1957    30.3  9240934      821.
+ 2 Afghanistan Asia       1962    32.0 10267083      853.
+ 3 Afghanistan Asia       1967    34.0 11537966      836.
+ 4 Afghanistan Asia       1982    39.9 12881816      978.
+ 5 Afghanistan Asia       1987    40.8 13867957      852.
+ 6 Afghanistan Asia       2007    43.8 31889923      975.
+ 7 Albania     Europe     1952    55.2  1282697     1601.
+ 8 Albania     Europe     1957    59.3  1476505     1942.
+ 9 Albania     Europe     1962    64.8  1728137     2313.
+10 Albania     Europe     1967    66.2  1984060     2760.
+# … with 1,450 more rows</code></pre>
+</div>
+<div id="filter-greater-or-equal" class="section level2 t">
+<h2>filter: Greater or Equal(<code>"&gt;="</code>)</h2>
+<pre class="r"><code>filter(gapminder, gdpPercap &gt;= 800)</code></pre>
+<pre><code># A tibble: 1,460 x 6
+   country     continent  year lifeExp      pop gdpPercap
+   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+ 1 Afghanistan Asia       1957    30.3  9240934      821.
+ 2 Afghanistan Asia       1962    32.0 10267083      853.
+ 3 Afghanistan Asia       1967    34.0 11537966      836.
+ 4 Afghanistan Asia       1982    39.9 12881816      978.
+ 5 Afghanistan Asia       1987    40.8 13867957      852.
+ 6 Afghanistan Asia       2007    43.8 31889923      975.
+ 7 Albania     Europe     1952    55.2  1282697     1601.
+ 8 Albania     Europe     1957    59.3  1476505     1942.
+ 9 Albania     Europe     1962    64.8  1728137     2313.
+10 Albania     Europe     1967    66.2  1984060     2760.
+# … with 1,450 more rows</code></pre>
+</div>
+<div id="filter-less" class="section level2 t">
+<h2>filter: Less(<code>"&lt;"</code>)</h2>
+<pre class="r"><code>filter(gapminder, gdpPercap &lt; 800)</code></pre>
+<pre><code># A tibble: 244 x 6
+   country     continent  year lifeExp      pop gdpPercap
+   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+ 1 Afghanistan Asia       1952    28.8  8425333      779.
+ 2 Afghanistan Asia       1972    36.1 13079460      740.
+ 3 Afghanistan Asia       1977    38.4 14880372      786.
+ 4 Afghanistan Asia       1992    41.7 16317921      649.
+ 5 Afghanistan Asia       1997    41.8 22227415      635.
+ 6 Afghanistan Asia       2002    42.1 25268405      727.
+ 7 Bangladesh  Asia       1952    37.5 46886859      684.
+ 8 Bangladesh  Asia       1957    39.3 51365468      662.
+ 9 Bangladesh  Asia       1962    41.2 56839289      686.
+10 Bangladesh  Asia       1967    43.5 62821884      721.
+# … with 234 more rows</code></pre>
+</div>
+<div id="filter-less-or-equal" class="section level2 t">
+<h2>filter: Less or Equal(<code>"&lt;="</code>)</h2>
+<pre class="r"><code>filter(gapminder, gdpPercap &lt;= 800)</code></pre>
+<pre><code># A tibble: 244 x 6
+   country     continent  year lifeExp      pop gdpPercap
+   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+ 1 Afghanistan Asia       1952    28.8  8425333      779.
+ 2 Afghanistan Asia       1972    36.1 13079460      740.
+ 3 Afghanistan Asia       1977    38.4 14880372      786.
+ 4 Afghanistan Asia       1992    41.7 16317921      649.
+ 5 Afghanistan Asia       1997    41.8 22227415      635.
+ 6 Afghanistan Asia       2002    42.1 25268405      727.
+ 7 Bangladesh  Asia       1952    37.5 46886859      684.
+ 8 Bangladesh  Asia       1957    39.3 51365468      662.
+ 9 Bangladesh  Asia       1962    41.2 56839289      686.
+10 Bangladesh  Asia       1967    43.5 62821884      721.
+# … with 234 more rows</code></pre>
+</div>
+<div id="filter-logical-and" class="section level2 t">
+<h2>filter: Logical AND(<code>"&amp;"</code>)</h2>
+<pre class="r"><code>filter(gapminder, country==&quot;Bangladesh&quot; &amp; gdpPercap &gt; 800)</code></pre>
+<pre><code># A tibble: 4 x 6
+  country    continent  year lifeExp       pop gdpPercap
+  &lt;fct&gt;      &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;     &lt;int&gt;     &lt;dbl&gt;
+1 Bangladesh Asia       1992    56.0 113704579      838.
+2 Bangladesh Asia       1997    59.4 123315288      973.
+3 Bangladesh Asia       2002    62.0 135656790     1136.
+4 Bangladesh Asia       2007    64.1 150448339     1391.</code></pre>
+</div>
+<div id="filter-logical-or" class="section level2 t">
+<h2>filter: Logical OR(<code>"|"</code>)</h2>
+<pre class="r"><code>filter(gapminder, country == &quot;Bangladesh&quot; |  gdpPercap &gt; 800)</code></pre>
+<pre><code># A tibble: 1,468 x 6
+   country     continent  year lifeExp      pop gdpPercap
+   &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+ 1 Afghanistan Asia       1957    30.3  9240934      821.
+ 2 Afghanistan Asia       1962    32.0 10267083      853.
+ 3 Afghanistan Asia       1967    34.0 11537966      836.
+ 4 Afghanistan Asia       1982    39.9 12881816      978.
+ 5 Afghanistan Asia       1987    40.8 13867957      852.
+ 6 Afghanistan Asia       2007    43.8 31889923      975.
+ 7 Albania     Europe     1952    55.2  1282697     1601.
+ 8 Albania     Europe     1957    59.3  1476505     1942.
+ 9 Albania     Europe     1962    64.8  1728137     2313.
+10 Albania     Europe     1967    66.2  1984060     2760.
+# … with 1,458 more rows</code></pre>
+</div>
+<div id="filter-the-in-operator" class="section level2 t">
+<h2>filter: The <code>"%in%"</code> Operator</h2>
+<pre class="r"><code>filter(gapminder, country %in% c(&quot;Bangladesh&quot;, &quot;Australia&quot;))</code></pre>
+<pre><code># A tibble: 24 x 6
+   country   continent  year lifeExp      pop gdpPercap
+   &lt;fct&gt;     &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+ 1 Australia Oceania    1952    69.1  8691212    10040.
+ 2 Australia Oceania    1957    70.3  9712569    10950.
+ 3 Australia Oceania    1962    70.9 10794968    12217.
+ 4 Australia Oceania    1967    71.1 11872264    14526.
+ 5 Australia Oceania    1972    71.9 13177000    16789.
+ 6 Australia Oceania    1977    73.5 14074100    18334.
+ 7 Australia Oceania    1982    74.7 15184200    19477.
+ 8 Australia Oceania    1987    76.3 16257249    21889.
+ 9 Australia Oceania    1992    77.6 17481977    23425.
+10 Australia Oceania    1997    78.8 18565243    26998.
+# … with 14 more rows</code></pre>
+</div>
+<div id="mutate-creating-new-column" class="section level2 t">
+<h2><code>mutate</code>: Creating New Column</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  mutate(gdp = gdpPercap * pop) %&gt;% 
+  head() </code></pre>
+<pre><code># A tibble: 6 x 7
+  country     continent  year lifeExp      pop gdpPercap          gdp
+  &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;        &lt;dbl&gt;
+1 Afghanistan Asia       1952    28.8  8425333      779.  6567086330.
+2 Afghanistan Asia       1957    30.3  9240934      821.  7585448670.
+3 Afghanistan Asia       1962    32.0 10267083      853.  8758855797.
+4 Afghanistan Asia       1967    34.0 11537966      836.  9648014150.
+5 Afghanistan Asia       1972    36.1 13079460      740.  9678553274.
+6 Afghanistan Asia       1977    38.4 14880372      786. 11697659231.</code></pre>
+<pre class="r"><code># GDP in Million 
+gapminder %&gt;% 
+  mutate(gdp = gdpPercap * pop / 10^6) %&gt;% 
+  head() </code></pre>
+<pre><code># A tibble: 6 x 7
+  country     continent  year lifeExp      pop gdpPercap    gdp
+  &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;  &lt;dbl&gt;
+1 Afghanistan Asia       1952    28.8  8425333      779.  6567.
+2 Afghanistan Asia       1957    30.3  9240934      821.  7585.
+3 Afghanistan Asia       1962    32.0 10267083      853.  8759.
+4 Afghanistan Asia       1967    34.0 11537966      836.  9648.
+5 Afghanistan Asia       1972    36.1 13079460      740.  9679.
+6 Afghanistan Asia       1977    38.4 14880372      786. 11698.</code></pre>
+</div>
+<div id="arrange-reorder-rows" class="section level2 t">
+<h2><code>arrange</code> : Reorder Rows</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  select(country, pop) %&gt;% 
+  arrange(pop) %&gt;% 
+  head() </code></pre>
+<pre><code># A tibble: 6 x 2
+  country                 pop
+  &lt;fct&gt;                 &lt;int&gt;
+1 Sao Tome and Principe 60011
+2 Sao Tome and Principe 61325
+3 Djibouti              63149
+4 Sao Tome and Principe 65345
+5 Sao Tome and Principe 70787
+6 Djibouti              71851</code></pre>
+</div>
+<div id="arrange-reorder-rowsdescending" class="section level2 t">
+<h2><code>arrange</code> : Reorder Rows(Descending)</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  select(country, pop) %&gt;% 
+  # descending order 
+  arrange(desc(pop)) %&gt;% 
+  head() </code></pre>
+<pre><code># A tibble: 6 x 2
+  country        pop
+  &lt;fct&gt;        &lt;int&gt;
+1 China   1318683096
+2 China   1280400000
+3 China   1230075000
+4 China   1164970000
+5 India   1110396331
+6 China   1084035000</code></pre>
+</div>
+<div id="group_by-grouping-data" class="section level2">
+<h2><code>group_by</code>: Grouping Data</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  group_by(continent) %&gt;% 
+  head()</code></pre>
+<pre><code># A tibble: 6 x 6
+# Groups:   continent [1]
+  country     continent  year lifeExp      pop gdpPercap
+  &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;    &lt;int&gt;     &lt;dbl&gt;
+1 Afghanistan Asia       1952    28.8  8425333      779.
+2 Afghanistan Asia       1957    30.3  9240934      821.
+3 Afghanistan Asia       1962    32.0 10267083      853.
+4 Afghanistan Asia       1967    34.0 11537966      836.
+5 Afghanistan Asia       1972    36.1 13079460      740.
+6 Afghanistan Asia       1977    38.4 14880372      786.</code></pre>
+</div>
+<div id="group_by-and-summarize" class="section level2 t">
+<h2><code>group_by</code> and <code>summarize</code></h2>
+<pre class="r"><code>gapminder %&gt;% 
+  summarize(total_pop = sum(pop))</code></pre>
+<pre><code># A tibble: 1 x 1
+    total_pop
+        &lt;dbl&gt;
+1 50440465801</code></pre>
+</div>
+<div id="aggregate-and-summarize" class="section level2 t">
+<h2>Aggregate and summarize</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  summarize(total_population = sum(pop), 
+            avg_gdppercap = mean(gdpPercap))</code></pre>
+<pre><code># A tibble: 1 x 2
+  total_population avg_gdppercap
+             &lt;dbl&gt;         &lt;dbl&gt;
+1      50440465801         7215.</code></pre>
+</div>
+<div id="summarise-sum" class="section level2 t">
+<h2><code>summarise</code>: Sum</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  group_by(continent) %&gt;% 
+  summarise(pop = sum(pop))</code></pre>
+<pre><code># A tibble: 5 x 2
+  continent         pop
+* &lt;fct&gt;           &lt;dbl&gt;
+1 Africa     6187585961
+2 Americas   7351438499
+3 Asia      30507333901
+4 Europe     6181115304
+5 Oceania     212992136</code></pre>
+</div>
+<div id="summarise-sum-1" class="section level2 t">
+<h2><code>summarise</code>: Sum</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  group_by(continent) %&gt;% 
+  # In Million
+  summarise(pop = sum(pop) / 10^6)</code></pre>
+<pre><code># A tibble: 5 x 2
+  continent    pop
+* &lt;fct&gt;      &lt;dbl&gt;
+1 Africa     6188.
+2 Americas   7351.
+3 Asia      30507.
+4 Europe     6181.
+5 Oceania     213.</code></pre>
+</div>
+<div id="summarise-maximum" class="section level2 t">
+<h2><code>summarise</code>: Maximum</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  group_by(continent) %&gt;% 
+  summarise(max_liexp = max(lifeExp))</code></pre>
+<pre><code># A tibble: 5 x 2
+  continent max_liexp
+* &lt;fct&gt;         &lt;dbl&gt;
+1 Africa         76.4
+2 Americas       80.7
+3 Asia           82.6
+4 Europe         81.8
+5 Oceania        81.2</code></pre>
+</div>
+<div id="summary-functions" class="section level2 t">
+<h2>Summary Functions</h2>
+<pre class="r"><code>mean() 
+sum() 
+median() 
+min() 
+max() 
+n()</code></pre>
+</div>
+<div id="aggregate-within-groups" class="section level2 t">
+<h2>Aggregate within Groups</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  group_by(continent) %&gt;% 
+  summarize(total_pop = sum(pop),
+            avg_lifeexp = mean(lifeExp))</code></pre>
+<pre><code># A tibble: 5 x 3
+  continent   total_pop avg_lifeexp
+* &lt;fct&gt;           &lt;dbl&gt;       &lt;dbl&gt;
+1 Africa     6187585961        48.9
+2 Americas   7351438499        64.7
+3 Asia      30507333901        60.1
+4 Europe     6181115304        71.9
+5 Oceania     212992136        74.3</code></pre>
+</div>
+<div id="the-top_n-verb" class="section level2">
+<h2>The <code>top_n</code> Verb</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  group_by(continent) %&gt;% 
+  top_n(1, pop)</code></pre>
+<pre><code># A tibble: 5 x 6
+# Groups:   continent [5]
+  country       continent  year lifeExp        pop gdpPercap
+  &lt;fct&gt;         &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;      &lt;int&gt;     &lt;dbl&gt;
+1 Australia     Oceania    2007    81.2   20434176    34435.
+2 China         Asia       2007    73.0 1318683096     4959.
+3 Germany       Europe     2007    79.4   82400996    32170.
+4 Nigeria       Africa     2007    46.9  135031164     2014.
+5 United States Americas   2007    78.2  301139947    42952.</code></pre>
+</div>
+<div id="rename-renaming-column" class="section level2 t">
+<h2><code>rename</code>: Renaming Column</h2>
+<pre class="r"><code>gapminder %&gt;% 
+  rename(population = pop) %&gt;% 
+  head() </code></pre>
+<pre><code># A tibble: 6 x 6
+  country     continent  year lifeExp population gdpPercap
+  &lt;fct&gt;       &lt;fct&gt;     &lt;int&gt;   &lt;dbl&gt;      &lt;int&gt;     &lt;dbl&gt;
+1 Afghanistan Asia       1952    28.8    8425333      779.
+2 Afghanistan Asia       1957    30.3    9240934      821.
+3 Afghanistan Asia       1962    32.0   10267083      853.
+4 Afghanistan Asia       1967    34.0   11537966      836.
+5 Afghanistan Asia       1972    36.1   13079460      740.
+6 Afghanistan Asia       1977    38.4   14880372      786.</code></pre>
+</div>

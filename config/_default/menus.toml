@@ -75,7 +75,7 @@ weight = 3
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 6
+  weight = 7
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/media/cv.pdf` and uncomment the lines below.
@@ -84,14 +84,7 @@ weight = 3
 #    url = "media/cv.pdf"
 #    weight = 70
 
-
 [[main]]
-  name = "Courses"
-  url = "/courses"
-  weight = 7
-
-
-# [[main]]
-# name = "Education"
-# url = "/education"
-# weight = 8
+name = "Post"
+url = "#posts"
+weight = 8
