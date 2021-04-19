@@ -4,7 +4,7 @@
 widget: contact
 
 # This file represents a page section.
-headless: true
+headless: true 
 
 # Order that this section appears on the page.
 weight: 130
@@ -14,7 +14,7 @@ subtitle:
 
 content:
   # Automatically link email and phone or display as text?
-  autolink: true
+  autolink: false
   
   # Email form provider
   form:
@@ -23,7 +23,7 @@ content:
       id:
     netlify:
       # Enable CAPTCHA challenge to reduce spam?
-      captcha: true
+      captcha: false 
   
 design:
   columns: '2'

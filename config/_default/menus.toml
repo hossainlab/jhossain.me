@@ -86,8 +86,8 @@ weight = 3
 
 
 [[main]]
-  name = "Contact"
-  url = "#contact"
+  name = "Courses"
+  url = "/courses"
   weight = 7
 
 

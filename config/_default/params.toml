@@ -13,20 +13,20 @@
 #   Guide to color themes: https://wowchemy.com/docs/customization/#color-themes
 #   Browse the latest built-in font sets at https://github.com/wowchemy/wowchemy-hugo-modules/tree/master/wowchemy/themes/
 #   Browse user installed themes in `data/themes/`
-theme = "forest"
+theme = "custom"
 
 # Enable users to switch between day and night mode?
-day_night = true
+day_night = false 
 
 # Override the theme's font set (optional).
 #   Guide to font sets: https://wowchemy.com/docs/customization/#fonts
 #   Browse the latest built-in font sets at https://github.com/wowchemy/wowchemy-hugo-modules/tree/master/wowchemy/data/fonts
 #   Browse user installed font sets in `data/fonts/`
-font = "Native"
+font = "custom"
 
 # Choose a font size.
 # Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
-font_size = "L"
+font_size = "M"
 
 ############################
 ## Basic Info
@@ -45,10 +45,10 @@ local_business_type = ""
 
 # Organization name (optional)
 # Enter an organization or project name. Defaults to the site title from `config.toml`.
-org_name = ""
+org_name = "Jagannath University"
 
 # Description for social sharing and search engines. If undefined, superuser role is used in place.
-description = "Hey there! This Jubayer Hossain. I am a Microbiology Master’s student at Jagannath University and a Health Data Science enthusiast. Health data science, bioinformatics, microscopic image processing, drug discovery, and machine learning are some of my research interests. I founded the Health Data Research Organization as well."
+description = "Health Data Science Enthusiast"
 
 ############################
 ## Site Features
@@ -57,12 +57,12 @@ description = "Hey there! This Jubayer Hossain. I am a Microbiology Master’s s
 # Enable source code highlighting? true/false
 # Documentation: https://wowchemy.com/docs/writing-markdown-latex/#highlighting-options
 highlight = true
-highlight_languages = ["r", "python", "julia"]  # Add support for highlighting additional languages
+highlight_languages = ["r", "python", "julia", "matlab", "c++"]  # Add support for highlighting additional languages
 # highlight_style = "github"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
 
 # Enable LaTeX math rendering? true/false
 #   If false, you can enable math on a per page basis as needed.
-math = false
+math = true 
 
 # Enable diagram rendering? true/false
 #   If false, you can enable diagrams on a per page basis as needed.
@@ -88,7 +88,7 @@ show_related = {book = true, page = false, post = true, project = true, publicat
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "contact.jubayerhossain@gmail.com"
+email = "b150605021@mib.jnu.ac.bd"
 # phone = "+8801771083855"
 
 # Address
