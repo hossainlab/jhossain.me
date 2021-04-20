@@ -8,60 +8,36 @@
   url = "#about"
   weight = 1
 
-# [[main]]
-# name = "Python"
-# url = "python"
-# weight = 2
-
-# [[main]]
-#   name = "Introduction to Python"
-#   parent = "Python"
-#   url = "#"
-#   weight = 1
-
-# [[main]]
-#   name = "Introduction to NumPy"
-#   parent = "Python"
-#   url = "#"
-#   weight = 2
-
-# [[main]]
-#   name = "Data Management with Python"
-#   parent = "Python"
-#   url = "#"
-#   weight = 3
-
-
-# [[main]]
-#   name = "Data Visualization with Python"
-#   parent = "Python"
-#   url = "#"
-#   weight = 4
-
-
-# [[main]]
-#   name = "Statistics with Python"
-#   parent = "Python"
-#   url = "#"
-#   weight = 5
-
+[[main]]
+  name = "Education"
+  url = "/education"
+  weight = 2
 
 
 [[main]]
   name = "Research"  # Title of the link.
   url = "#publications"  # Widget Page folder name.
-  weight = 2  # Position of the link in the navigation bar.
+  weight = 3  # Position of the link in the navigation bar.
 
 [[main]]
 name = "Projects"
 url = "#projects"
-weight = 3
+weight = 4
 
+[[main]]
+name = "Notes"
+url = "/notes"
+weight = 5
 
-# [[main]]
-# name = "Posts"
-# url = "#posts"
-# weight = 2
+[[main]]
+name = "Posts"
+url = "#posts"
+weight = 6
+
+[[main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 7
 
 
 
@@ -72,10 +48,6 @@ weight = 3
 #   url = "#featured"
 #   weight = 40
 
-[[main]]
-  name = "Contact"
-  url = "#contact"
-  weight = 7
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/media/cv.pdf` and uncomment the lines below.
@@ -84,7 +56,3 @@ weight = 3
 #    url = "media/cv.pdf"
 #    weight = 70
 
-[[main]]
-name = "Post"
-url = "#posts"
-weight = 8

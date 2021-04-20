@@ -2,7 +2,7 @@
 # Accomplishments widget.
 widget = "accomplishments"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
-active = false  # Activate this widget? true/false
+active = true  # Activate this widget? true/false
 
 title = "Education"
 subtitle = ""
@@ -110,7 +110,4 @@ date_format = "Jan 2006"
   date_start = "2020-04-01"
   date_end = "2020-04-10"
   description = ""
-
-
-
 +++

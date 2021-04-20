@@ -15,7 +15,7 @@ subtitle = ""
   page_type = "publication"
   
   # Choose how much pages you would like to display (0 = all pages)
-  count = 5
+  count = 3
   
   # Choose how many pages you would like to offset by
   offset = 0
@@ -58,7 +58,12 @@ subtitle = ""
 
   # Text color (true=light or false=dark).
   # text_color_light = true  
-  
+
+[content.archive]
+enable = true
+text = "See All On Going Research"
+link = "publication/"
+
 [advanced]
  # Custom CSS. 
  css_style = ""

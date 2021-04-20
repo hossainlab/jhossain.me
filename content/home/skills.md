@@ -62,12 +62,6 @@ subtitle = ""
 
 
  #[[feature]]
-  #icon = "julia"
-  #icon_pack = "custom"
-  #name = "Julia"
-
-
- #[[feature]]
   #icon = "spss"
   #icon_pack = "custom"
   #name = "SPSS"
@@ -83,9 +77,10 @@ subtitle = ""
 # Uncomment to use custom SVG icons.
 # Place custom SVG icon in `assets/images/icon-pack/`, creating folders if necessary.
 # Reference the SVG icon name (without `.svg` extension) in the `icon` field.
-# [[feature]]
-#  icon = "your-custom-icon-name"
-#  icon_pack = "custom"
-#  name = "Surfing"
-#  description = "90%"
+
+#[[feature]]
+#icon = "julia"
+#con_pack = "custom"
+#name = "Julia"
+#description = "90%"
 +++
