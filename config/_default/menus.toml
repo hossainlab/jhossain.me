@@ -13,31 +13,36 @@
   url = "/education"
   weight = 2
 
+[[main]]
+  name = "Teaching"  # Title of the link.
+  url = "/teaching"  # Widget Page folder name.
+  weight = 3  # Position of the link in the navigation bar.
+
 
 [[main]]
   name = "Research"  # Title of the link.
   url = "#publications"  # Widget Page folder name.
-  weight = 3  # Position of the link in the navigation bar.
+  weight = 4  # Position of the link in the navigation bar.
 
 [[main]]
 name = "Projects"
 url = "#projects"
-weight = 4
+weight = 5
 
 [[main]]
 name = "Notes"
 url = "/notes"
-weight = 5
+weight = 6
 
 [[main]]
 name = "Posts"
 url = "#posts"
-weight = 6
+weight = 7
 
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 7
+  weight = 8
 
 
 
