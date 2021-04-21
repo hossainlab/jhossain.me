@@ -34,15 +34,22 @@ name = "Notes"
 url = "/notes"
 weight = 6
 
+
+[[main]]
+name = "Resources"
+url = "/resources"
+weight = 7
+
+
 [[main]]
 name = "Posts"
 url = "#posts"
-weight = 7
+weight = 8
 
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 8
+  weight = 9
 
 
 
