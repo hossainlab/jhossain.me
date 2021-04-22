@@ -128,3 +128,870 @@ https://cran.r-project.org/bin/macosx/
 - Download and Install
 https://rstudio.com/products/rstudio/download/#download
 
+
+## Variables(Identifiers) in R{.t}
+- Variables are used to **store data**, whose value can be changed according to our need. 
+- A variable is a name given to a memory location, which is used to store values in a computer program.
+- Variables in R programming can be used to store numbers (real and complex), words, matrices, and even tables.  
+- R is a dynamically programmed language which means that unlike other programming languages, we do not have to declare the data type of a variable before we can use it in our program. 
+- Unique name given to variable (function and objects as well) is **identifier**.
+
+
+## Rules for writing Identifiers in R{.t}
+- Identifiers can be a combination of letters, digits, period (.) and underscore (_). 
+- It must start with a letter or a period. If it starts with a period, it cannot be followed by a digit.
+- It should not start with a number (e.g: 2x) 
+- It should not start with a dot followed by a number (e.g: .2x)  
+- It should not start with an underscore (e.g: _x) 
+- Reserved words in R cannot be used as identifiers(e.g: TRUE, FALSE) 
+
+Basically, there are 5 naming conventions 
+
+- alllowercase: e.g. `myname`
+- period.separated: e.g. `new.name`
+- underscore_separated: e.g. `my_name`
+- lowerCamelCase: e.g. `myName`
+- UpperCamelCase: e.g. `MyName`
+
+## Creating Variables{.t}
+Using equal(`=`) operator
+```{r echo=TRUE}
+x = 10 
+```
+Using leftward(`<-`) operator 
+```{r echo=TRUE}
+y <- 15  
+```
+
+## Reserved Keaywords in R{.t}
+- Don’t use any reserved keyword as variable name. List all of reserved words in R by using (?Reserved). 
+
+```{r, echo=TRUE}
+?Reserved
+```
+
+
+## Entering Input{.t}
+At the R prompt/console we type expressions. 
+```{r echo=TRUE}
+num <- 10
+```
+The `<-` symbol is the **assignment** operator. \
+The grammar of the language determines whether an expression is complete or not.
+
+## Evaluation{.t}
+When a complete expression is entered at the R console, it is evaluated and the result of evaluated expression is returned. The result may be auto-printed. 
+```{r}
+x <- 10
+x
+```
+
+```{r}
+x <- 10
+print(x)
+```
+
+```{r}
+x <- 10
+cat(x)
+```
+  
+## Comments in R{.t}
+The # character indicates a comment. 
+```{r}
+x <- 10 # This is a comment
+```
+Anything to the right of the # (inlcuding the # itself) is ignored. \
+This is only comment character in R. \
+R does not support multi-line comments or comment block.
+
+## Data Types in R{.t}
+R has five basic data types 
+
+- character(e.g: 'abul', "abul")
+- numeric(e.g: 2, 3)
+- integer(e.g: 5L)
+- complex(e.g: 5i)
+- logical(True/False)
+
+## Numbers{.t}
+* Numbers in R generally treated as numeric objects(i.e. double precision real numbers)
+* If you explicitly want an integer, you need to specify the `L` suffix.
+* There is also a special number `Inf` which is represents infinity; e.g. `1 / 0`
+* `Inf` can be used in ordinary calculations; e.g. `1/Inf` is `0`
+* The value `NaN` represents an undefined value("not a number"); e.g. `0/0` 
+* `NaN` can also be thought of as a missing value. 
+
+The numeric constants are 
+
+- integer(`L`)
+- double
+- complex(`i`) 
+
+## Creating Numeric Objects{.t}
+
+
+```{r}
+# Create numeric object
+n <- 5  
+```
+```{r}
+# Check type of object
+typeof(n)
+```
+
+
+```{r}
+# Create an integer type object 
+i = 5L 
+```
+```{r}
+# Check type of object
+typeof(i)
+```
+
+```{r}
+# Create a double type object 
+d = 22
+```
+```{r}
+
+# Check type of object
+typeof(d)
+```
+```{r}
+# Create a complex type object 
+c = 4i 
+```
+
+```{r}
+# Check type of object
+typeof(c)
+```
+
+
+## Decimal vs Double vs Float{.t}
+The Decimal, Double, and Float variable types are different in the way that they store the values. Precision is the main difference where float is a single precision (32 bit) floating point data type, double is a double precision (64 bit) floating point data type and decimal is a 128-bit floating point data type.
+
+* Float - 32 bit (7 digits)
+* Double - 64 bit (15-16 digits)
+* Decimal - 128 bit (28-29 significant digits)
+
+## Characters{.t}
+Character constants can be represented using either single quotes ('') or double quotes ("") as delimiters.
+
+```{r}
+# Create a character type object 
+char = "Hello"
+```
+```{r}
+# Check type of object 
+typeof(char)
+```
+
+
+## Atributes{.t} 
+R objects can have attributes 
+
+* names, dimnames 
+* dimensions(e.g. matrices, arrays)
+* class 
+* length 
+* other user-defined attributes/metadata
+
+Attributes of an object can be accessed using the `attributes()` function.
+
+## Built-in Constants in R{.t}
+
+```{r}
+pi # value of pi 
+LETTERS
+```
+
+```{r}
+month.name 
+```
+
+
+## Operators in R{.t}
+- R has many operators to carry out different mathematical and logical operations.
+- Operators in R can mainly be classified into the following categories. 
+  1. Arithmetic Operators 
+  2. Relational Operators
+  3. Logical Operators 
+  4. Assignment Operators 
+
+## Arithmetic Operators{.t}
+
+```{r}
+x <- 10 
+y <- 2 
+```
+
+
+```{r}
+# Addition
+x+y
+# Subtraction
+2-5
+```
+
+```{r}
+# Multiplication
+2 * 5 
+
+# Division
+2 / 5 
+
+# Exponent 
+2 ^ 5
+```
+
+```{r}
+# Modulus(Remainder from division)
+2 %% 5
+
+# Integer Division 
+2 %/% 5
+```
+
+## Logical Operators{.t}
+```{r}
+# Logical NOT(!)
+! TRUE
+! FALSE   
+```
+
+```{r}
+# Logical AND(&&)
+TRUE && TRUE
+TRUE && FALSE 
+FALSE && FALSE 
+```
+
+```{r}
+# Logical OR(|)
+TRUE | TRUE 
+TRUE | FALSE 
+FALSE | FALSE    
+```
+
+
+## Relational Operators{.t}
+```{r}
+x <- 10
+y <- 5 
+# Equality 
+x == y 
+
+# Inequality
+x != y 
+
+# Less Than 
+x < y 
+```
+```{r}
+# Greater Than 
+x > y 
+# Less or Equal 
+x <= y 
+# Greater or Equal
+x >= y 
+```
+
+## What is Data Structures?{.t}
+In computer science, a data structure is a data organization, management, and storage format that enables efficient access and modification. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data. 
+(https://en.wikipedia.org/wiki/Data_structure)
+
+## Vector{.t}
+- Vector is a basic data structure in R. 
+- It contains element of the same type. 
+- The data types can be logical, integer, double, character, and complex. 
+- A vector's type can be checked with the `typeof()` function. 
+
+
+## Creating Vectors{.t}
+- Vectors are generally created using the c() function.
+- To create Vectors of consecutive number, the : operator very helpful.
+- More complex sequence can be created using seq() function.
+```{r}
+# Create a vector using c() function 
+v1 <- c(1, 2, 3, 4, 5, 6,7) 
+# print v1 
+v1 
+```
+
+```{r}
+
+# Create a vector using : operator 
+v2 <- 1:10
+# print v2 
+v2
+```
+
+```{r}
+# Create a vector using seq(start, stop, step) function 
+v3 <- seq(1, 20, 2) 
+# print v3 
+v3 
+```
+
+```{r}
+# Create a vector using seq(start, stop, by = step) function 
+v4 <- seq(1, 10, by = .5) 
+# print v3 
+v4 
+```
+
+```{r}
+# Numeric Vector
+v <- c(0.5, 0.6) 
+# Logical Vector 
+v <- c(TRUE, FALSE)
+# Logical Vector 
+v <- c(T, F)
+# Character Vector 
+v <- c("a", "b")
+# Integer Vector 
+v <- 1:10 
+# Complex Vector 
+v <- c(1+0i, 2+0i)
+```
+
+## Mixing Objects{.t}
+```{r}
+# Character 
+x <- c(1.7, "a")
+# Numeric 
+y <- c(TRUE, 2)
+# Character 
+z <- c("a", TRUE)
+```
+
+
+
+
+## Matrix{.t} 
+- Matrix is a two dimensional data structure in R programming. 
+- Matrix is similar to **vector** but additionally contains the dimension attributes. 
+- All attributes of an object can be checked by `attributes()` function. 
+- Dimention can be checked by directly with the `dim()` function. 
+- We can check if a variable is a matrix or not with the `class()` function.
+
+
+## Creatinig Matrix{.t}
+- Matrix can be created using the `matrix()` function.
+- Dimension of the matrix can be defined by passing appropriate value for arguments `nrow ` and ` ncol`.
+
+```{r}
+# Create a matrix using matrix function 
+mat <- matrix(1:9, nrow = 3, ncol = 3)
+# print matrix 
+mat 
+```
+
+```{r}
+# Create a matrix using matrix function: only one dimension  
+mat <- matrix(1:9, nrow = 3)
+# print matrix 
+mat 
+```
+
+```{r}
+# Create a matrix using matrix function: filling by row-wise 
+mat <- matrix(1:9, nrow = 3, byrow = TRUE)
+# print matrix 
+mat 
+```
+
+```{r}
+# Create a matrix using matrix function: dimension names 
+mat <- matrix(1:9, nrow = 3, dimnames = list(c("X", "Y", "Z"), 
+                                             c("A","B","C")))
+# print matrix 
+mat 
+```
+
+## Colnames, Rownames and Dimension of Matrix{.t}
+```{r}
+# Create a matrix using matrix function 
+mat <- matrix(1:9, nrow = 3, dimnames = list(c("X", "Y", "Z"), 
+                                             c("A","B","C")))
+# Column Names 
+colnames(mat) 
+
+# Row Names 
+rownames(mat)
+
+# Dimension 
+dim(mat)
+```
+
+## List{.t}
+- List is a data structure having components of mixed data types. 
+- A `vector` having all elements of the same type is called atomic vector but a vector having elements of different type is called list. 
+- We can check if it's a list with `typeof()` function and find its length using `length()` function.
+
+## Creating List{.t}
+List can be created using the `list()` function.
+```{r}
+# Create a list 
+L = list(1, "a", TRUE, 1+3i)
+# Print list 
+L
+```
+
+
+## Factors{.t}
+- Factor is a data structure use for fields that takes only predefined, finite number of values(categorical values)
+- Factors are used to represent categorical data and can be ordered and unordered. 
+
+
+## Creating Factors{.t}
+```{r}
+# Create a factor using factor() function 
+f <- factor(c("yes", "no", "yes", "no"))
+# Print factor 
+f
+```
+
+```{r}
+# Check levels 
+levels(f)
+```
+
+## Data Frame{.t}
+-  Data frame is a two dimensional data structure in R. 
+- It is a special case of a `list` which has each component of equal length. 
+- Each component from the column and contents of the component from rows. 
+
+
+## Create Data Frame{.t}
+```{r}
+# Create a Data Frame 
+df <- data.frame("Age" = c(21, 22, 14, 15, 16, 23), 
+      "Name" = c("Jim","Tim", "Babul", "Bithi", "Abul", "Akhi"), 
+      "Married" = factor(c("yes", "no", "yes", "no", "yes", "yes")))
+# Print Data Frame 
+df
+```
+
+
+## Exploring Data Frame{.t}
+```{r}
+# Dimension 
+dim(df) 
+
+# Data Structures 
+str(df)
+```
+
+
+```{r}
+# Summary 
+summary(df)
+
+# Colnames 
+names(df) 
+```
+
+```{r}
+# Accessing Columns 
+df$Name 
+```
+
+## Subsetting a Vector{.t}
+```{r}
+# Create a vector 
+x <- c(1, 11, 111)
+
+# Extract first element 
+x[1]
+
+# Extract second element 
+x[2]
+```
+
+```{r}
+# Create a vector 
+x <- c("a", "b", "c", "d", "e")
+
+# Extract data using : 
+x[1:3]
+
+# Extract data using c() function 
+x[c(1, 3, 4)]
+```
+
+```{r}
+# Create a vector 
+x <- c(1, 20, 21, 11, 23, 40, 42)
+
+# Extract data using relational operator
+x[x > 32]
+```
+
+## Subsetting List{.t}
+```{r}
+L = list(x = 1:5, y=0.5)
+
+# Extract first element 
+L[[1]]
+
+# Extract first element 
+L[[2]]
+
+# Access elements 
+L$x
+```
+
+## Subsetting Matrix{.t}
+```{r}
+m <- matrix(1:6, 2, 3)
+m
+```
+```{r}
+# Extract first row 
+m[1, ]
+
+# Extract first element from first row 
+m[1, 1]
+```
+
+```{r}
+m <- matrix(1:6, 2, 3)
+m
+```
+```{r}
+# Extract second column 
+m[, 2]
+```
+
+## `if` statement {.t}
+```r
+if(condition) {
+  # do something 
+}
+```
+```{r, out.width = "100px", out.height="120px", echo=FALSE, fig.align='center', fig.cap="https://www.datamentor.io/r-programming/if-else-statement/"}
+knitr::include_graphics("../img/r-if-statement.jpg")
+```
+
+
+## Write a program to check a number is a positive{.t}
+
+```{r}
+num = 10
+if (num > 0) {
+    print("positive number")
+}
+```
+
+
+## `if..else` statement {.t}
+```r
+if(condition) {
+  # do something 
+} else {
+  # do something 
+}
+```
+```{r, out.width = "100px", out.height="100px", echo=FALSE, fig.align='center', fig.cap="https://www.datamentor.io/r-programming/if-else-statement/"}
+knitr::include_graphics("../img/r-if-else-statement.jpg")
+```
+
+## Write a program to check a number is a positive or negative{.t}
+
+```{r}
+num = 10
+if (num > 0) {
+    print("positive number")
+} else {
+    print("Negative number")
+}
+```
+
+
+## `if..else if...else` statement {.t}
+```r
+if(condition-1) {
+  # do something 
+} else if(condition-2){
+  # do something 
+} else if(condition-3) {
+  # do something 
+} else {
+  # do something 
+}
+```
+## Write a program to check your bmi and health condition{.t}
+```{r}
+bmi = 18.5
+if(bmi < 18.5) {
+  print("underweight")
+} else if(bmi >= 18.5 && bmi < 25){
+  print("normal")
+} else if(bmi <= 25 && bmi < 30 ){
+  print("overweight")
+} else {
+  print("obese")
+}
+```
+
+
+## `ifelse` function {.t}
+- Vectors form the basic building block of R programming. 
+- Most of the functions in R take vector as input and output resultant vector. 
+- This vectorization of code, will be much faster than applying the same function to each element of the vector indivodually. 
+- Similar concept, there is a vector equivalent form of the `if...else` statement in R, the `ifelse()` function. 
+
+```r
+ifelse(condition, x, y)
+```
+
+## Check even and odd with ifelse function{.t}
+```{r}
+a = 10 
+ifelse(a %% 2 == 0, "even", "odd")
+```
+## Check even or odd on a sequence of object{.t}
+```{r}
+b = c(22, 12, 23, 24, 21, 28)
+ifelse(b %% 2 == 0, "even", "odd")
+```
+
+## `for` loop {.t}
+```r
+for (val in sequence){
+  # do something 
+}
+```
+```{r, out.width = "100px", out.height="120px", echo=FALSE, fig.align='center', fig.cap="https://www.datamentor.io/r-programming/if-else-statement/"}
+knitr::include_graphics("../img/r-for-loop.jpg")
+```
+
+## Print first 10 (1 to 10) natural numbers{.t}
+```{r}
+for (i in 1:10) {
+    print(i)
+}
+```
+
+
+## Print first 10 (1 to 10) natural numbers in reverse order{.t}
+```{r}
+for (i in 10:1) {
+    print(i) 
+}
+```
+
+## Iteration of a sequence{.t} 
+```{r}
+L = c(2, 1, 4, 5, 6, 7)
+for (val in L) {
+    print(val)
+}
+```
+
+## Iteration of a sequence with condition{.t}
+```{r}
+L = c(2, 1, 4, 5, 6, 7)
+for (val in L) {
+    if(val %% 2 == 0) {
+        print(val)
+    }
+}
+```
+
+
+## `while` loop {.t}
+```r
+while(condition){
+  # do something 
+}
+```
+```{r, out.width = "100px", out.height="120px", echo=FALSE, fig.align='center', fig.cap="https://www.datamentor.io/r-programming/if-else-statement/"}
+knitr::include_graphics("../img/r-while-loop.jpg")
+```
+
+## Print first 10 natural numbers{.t}
+```{r}
+i = 1 
+while (i <= 10) {
+    print(i) 
+    i = i + 1 
+}
+
+```
+
+## Print first 10 natural numbers in reverse order{.t}
+```{r}
+i = 10 
+while(i > 0) {
+    print(i) 
+    i = i -1 
+}
+```
+
+
+## `break` statement{.t}
+```r
+if(condition){
+  break 
+}
+```
+```{r, out.width = "100px", out.height="120px", echo=FALSE, fig.align='center', fig.cap="https://www.datamentor.io/r-programming/if-else-statement/"}
+knitr::include_graphics("../img/r-break-flowchart.jpg")
+```
+
+
+## Example of break statement using for loop{.t}
+```{r}
+x <- 1:10 
+for (i in x) {
+    if(i == 5) {
+        break      
+    }
+    print(i)
+}
+```
+
+
+## Example of break statement using while loop{.t} 
+```{r}
+i = 0 
+while (i <= 10) {
+    i = i + 1 
+    if(i == 5) {
+        break
+    }
+    print(i)
+}
+```
+
+
+## `next` statement{.t}
+```r
+if(condition){
+  next  
+}
+```
+```{r, out.width = "100px", out.height="120px", echo=FALSE, fig.align='center', fig.cap="https://www.datamentor.io/r-programming/if-else-statement/"}
+knitr::include_graphics("../img/r-next-flowchart.png")
+```
+
+
+## Example of next statement using for loop{.t} 
+```{r}
+for (val in 1:10) {
+    if (val == 5) {
+        next 
+    }
+    print(val)
+}
+
+```
+## Example of next statement using while loop{.t}
+```{r}
+i = 0 
+while(i <= 5) {
+    i = i + 1 
+    if(i == 2) {
+        next
+    }
+    print(i)
+}
+```
+
+
+
+## `repeat` loop{.t}
+```r
+repeat {
+  # do something 
+}
+```
+```{r, out.width = "100px", out.height="120px", echo=FALSE, fig.align='center', fig.cap="https://www.datamentor.io/r-programming/if-else-statement/"}
+knitr::include_graphics("../img/r-repeat-loop.jpg")
+```
+
+## Example of repeat loop{.t}
+```{r}
+x <- 1
+repeat {
+print(x)
+x = x+1
+if (x == 6){
+break
+}
+}
+```
+
+## Functions in R{.t}
+- A function is a set of statements organized together to perform a specific task. 
+- R has a large number of in-built functions and the user can create their own functions. 
+- In R, a function is an object so the R interpreter is able to pass control to the function, along with arguments that may be necessary for the function to accomplish the actions. 
+- The function in turn performs its task and returns control to the interpreter as well as any result which may be stored in other objects.
+
+## Two Types of Function in R{.t}
+- Built-in: R has many in-built functions which can be directly called in the program without defining them first.
+- User Defined: We can also create and use our own functions referred as user defined functions.
+- Simple examples of in-built functions are `seq()`, `mean()`, `max()`, `sum()` and paste(...) etc. They are directly called by user written programs.
+
+
+## Creating Functions in R{.t}
+```{r}
+f <- function() {
+  # empty function
+}
+# Function have their own class 
+
+class(f) 
+
+# Execute / Call this function
+f()
+```
+
+## Create a Hello World Function{.t}
+```{r}
+# Create a function with no arguments 
+say_hello <- function() {
+    cat("Hello World\n") 
+}
+# Call 
+say_hello()
+```
+
+
+## Create a function for printitng Hello World 3 times{.t}
+```{r}
+say_hello <- function(num) {
+    for(i in seq_len(num)) {
+        cat("Hello World!\n")
+    }
+}
+
+# Call function with arguments 
+say_hello(3)
+
+```
+
+## References{.t}
+- https://www.datamentor.io/r-programming/
+- https://online.stat.psu.edu/stat484/
+- https://online.stat.psu.edu/stat485/
+- https://www.statmethods.net/index.html
+- https://simplystatistics.org/
+- https://www.tutorialspoint.com/r/index.htm
+- https://www.rforbiologists.org/
+- https://compgenomr.github.io/book/
+- https://statsandr.com/
+- https://rafalab.github.io/pages/harvardx.html
+- https://bolt.mph.ufl.edu/software/r-phc-6055/
+
+
+
+
+
+
+
