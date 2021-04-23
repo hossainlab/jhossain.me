@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Health Impact for Distance Learning during COVID-19 among Jagannath University Science Faculty Students: An Exploratory Research"
+title: "Health Impact for Distance Learning during COVID-19 among Jagannath University Science Faculty Students: An Exploratory Study"
 authors: [Md. Jubayer Hossain, Atik Shahriar Sammo, Bithi Akter, Tanjum Ahmed Nodee,Sanjida Akter Sathy, Ema Akter,Susmita Jahan Bristy]
 date: 2021-04-23T23:24:21+06:00
 doi: ""
