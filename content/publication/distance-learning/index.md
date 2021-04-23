@@ -1,19 +1,19 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "A survey on the general concept of diabetes among students of different universities in Bangladesh."
-authors: [Dr. Md. Kamrujjaman, Alamgir Hossain Tanjim, Md. Jubayer Hossain]
-date: 2021-04-16T06:40:02+06:00
+title: "Health Impact for Distance Learning during COVID-19 among Jagannath University Science Faculty Students: An Exploratory Research"
+authors: [Md. Jubayer Hossain, Atik Shahriar Sammo, Bithi Akter, Tanjum Ahmed Nodee,Sanjida Akter Sathy, Ema Akter,Susmita Jahan Bristy]
+date: 2021-04-23T23:24:21+06:00
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2021-04-16T06:40:02+06:00
+publishDate: 2021-04-23T23:24:21+06:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["0"]
 
 # Publication name and optional abbreviated publication name.
 publication: ""
@@ -22,9 +22,9 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "This survey focuses on the attitude of students from different universities of Bangladesh towards diabetes and their daily activities, food habits and sleeping pattern."
+summary: "To assess the health impact of distance learning among Bangladeshi university students during COVID-19."
 
-tags: []
+tags: [COVID-19]
 categories: []
 featured: false
 
@@ -37,10 +37,10 @@ featured: false
 #   icon: twitter
 
 url_pdf:
-url_code: https://github.com/hossainlab/Diabetes_Study
+url_code: 
 url_dataset:
 url_poster:
-url_project: https://www.researchgate.net/project/Diabetes-363
+url_project:
 url_slides:
 url_source:
 url_video:
@@ -68,16 +68,11 @@ projects: []
 slides: ""
 ---
 
-## Declaration
-This survey focuses on the attitude of students from different universities of Bangladesh
-towards diabetes and their daily activities, food habits and sleeping pattern. Your kind
-participation in this survey will help our research. This survey is expected to be spontaneous.
-You are requested to fill the given questions based on your won knowledge. All the information
-collected for this survey is highly confidential and will be used for research purpose only.
+## Survey 
 
-## Survey Design 
-Dr. Md. Kamrujjaman <br>
-Associate Professor <br>
-Department of Mathematics <br>
-University of Dhaka, Bangladesh <br>
-Email: kamrujjaman@du.ac.bd <br>
+ <iframe
+       src="https://forms.gle/NRZKFQZ1YGGrV4Vi9"
+       width="100%"
+       height="1000px"
+       style="border:none;">
+ </iframe>

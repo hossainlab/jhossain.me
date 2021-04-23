@@ -68,3 +68,24 @@ projects: []
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
+
+## Introduction 
+Diabetes mellitus is associated with significant morbidity and mortality in Bangladesh, where healthcare facilities and accessibility are inadequate. Diabetes is also linked to heart disease, stroke, and kidney failure. The secret to achieving clinical goals in ambulatory treatment is assumed to be sufficient patient awareness of self-care. 
+In Bangladesh, there are a few studies on the relationship between awareness and self-care practices among type 2 diabetes patients, but none are recent. Despite this, little research has been done on type 1 diabetes patients' self-care habits and awareness.The foundation of DM management is diabetes education combined with adequate motivation of patients and caregivers.
+
+
+## Objectives 
+- Since many people with diabetes are uncertain if they have Type 1 or Type2, the questionnaire included four questions to help determine the most likely type 
+
+- The aim of this study was to see if there was a connection between diabetes awareness and self-care practices among Type 1 and Type 2 diabetes patients 
+- Estimate the proportion of respondents with diabetes type by these questions 
+
+
+## Survey 
+
+ <iframe
+       src="https://forms.gle/zSRnUekXswLKqDp17"
+       width="100%"
+       height="1000px"
+       style="border:none;">
+ </iframe>
