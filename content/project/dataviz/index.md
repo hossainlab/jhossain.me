@@ -1,12 +1,12 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Mapping the Coronavirus Cases in 2020 using Python GeoPandas"
-summary: "Mapping with Geopandas"
+title: "Datavisualization with Python"
+summary: "his is a short sequence of notes on Data Visualization for scientific work, specially in the field of data science"
 authors: []
-tags: ["Health Data Science"]
-categories: []
-date: 2021-03-18T22:54:26+06:00
+tags: [Books]
+categories: [Books]
+date: 2021-04-25T00:58:17+06:00
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""

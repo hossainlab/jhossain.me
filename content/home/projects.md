@@ -24,6 +24,10 @@ subtitle = ""
   [[content.filter_button]]
   name = "All"
   tag = "*"
+
+  [[content.filter_button]]
+  name = "Books"
+  tag = "Books"
   
   [[content.filter_button]]
   name = "Public Health"
@@ -54,7 +58,7 @@ subtitle = ""
   #   2 = Compact
   #   3 = Card
   #   5 = Showcase
-  view = 3
+  view = 2
 
   # For Showcase view, flip alternate rows?
   flip_alt_rows = false
@@ -78,7 +82,13 @@ subtitle = ""
 
   # Text color (true=light or false=dark).
   # text_color_light = true  
-  
+
+[content.archive]
+enable = true
+text = "See All Projects"
+link = "projects/"
+
+
 [advanced]
  # Custom CSS. 
  css_style = ""
