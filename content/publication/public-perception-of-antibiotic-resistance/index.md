@@ -1,7 +1,6 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
-
-title: "Public Perception on the Spread of Antibiotic Resistance in Bangladesh"
+title: "Perception of Students on Antibiotic Resistance and Prevention: An internet-based community case study from Dhaka, Bangladesh"
 authors: [Syeda Tasneem Towhid, Md. Jubayer Hossain, Sumona
 Akter, Md. Atik Shariar Sammo, Sharif Hossain, Sumaiya Akter Mukta, Morsheda Munia, Mohammad Nahian]
 date: 2021-04-16T06:38:12+06:00
@@ -23,7 +22,7 @@ publication_short: ""
 abstract: ""
 
 # Summary. An optional shortened abstract.
-summary: "The main objective of this survey is to improve awareness and understanding of antimicrobial resistance through effective communication, education and training."
+summary: "The aim of this study is to assess perception of the students on the impending doom called antibiotic resistance epidemic around the world through a questionnaire-based random survey on 472 students from final year of school (10th grade) to post-graduate level.  "
 
 tags: ["antibiotics", "antimicrobial resistance", "knowledge of antibiotics"]
 categories: []
@@ -80,7 +79,6 @@ Antibiotics either are cytotoxic or cytostatic to the micro-organisms, allowing 
 - Reduce the incidence of infection through effective sanitation, hygiene and infection prevention measures.
 - Optimize the use of antimicrobial medicines in human and animal health.
 - Develop the economic case for sustainable investment that takes account of the needs of all countries and to increase investment in new medicines, diagnostic tools, vaccines and other interventions.
-
 
 ## Survey 
 
