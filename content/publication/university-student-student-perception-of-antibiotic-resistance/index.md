@@ -1,7 +1,6 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
-
-title: "University Student Perception on the Spread of Antibiotic Resistance in Bangladesh"
+title: "Perception of Students on Antibiotic Resistance and Prevention: An internet-based community case study from Dhaka, Bangladesh"
 authors: [Syeda Tasneem Towhid, Md. Jubayer Hossain, Sumona
 Akter, Md. Atik Shariar Sammo]
 date: 2021-04-19T00:31:46+06:00
