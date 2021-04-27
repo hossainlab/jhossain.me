@@ -14,9 +14,9 @@ organizations:
   url: "https://hdrobd.org/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: I am a Microbiology Master’s student at Jagannath University and a Health Data Science enthusiast. Health data science, bioinformatics, public health are some of my research interests. I founded the Health Data Research Organization as well.
-The Health Data Research Organization (HDRO) is a non-profit organization dedicated to scientific research and dissemination using primary and secondary sources and third-party data. Students and young professionals with expertise in biological science and health science run the organization, supervised by university faculty members in the life sciences.
-Python is my primary language for data mining and machine learning. I also have a basic understanding of R and SQL.
+bio: I am a Microbiology Master’s student at Jagannath University and a Health Data   
+  The Health Data Research Organization (HDRO) is a non-profit organization dedicated to scientific research and dissemination using primary and secondary sources and third-party data. Students and young professionals with expertise in biological science and health science run the organization, supervised by university faculty members in the life sciences.
+  Python is my primary language for data mining and machine learning. I also have a basic understanding of R and SQL.
 
 interests:
 - Health Data Science
