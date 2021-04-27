@@ -43,7 +43,6 @@ date_format = "Jan 2006"
   date_start = "2016-02-01"
   date_end = ""
   description = """  
-  * Chemistry(Secondary & Higher Secondary)
-  * Physics(Secondary & Higher Secondary)
+  I have provided comprehensive tutoring in Physics and Chemistry to the students of 10th, 11th, and 12th grade.
   """
 +++

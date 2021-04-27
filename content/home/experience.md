@@ -25,8 +25,7 @@ date_format = "Jan 2006"
   date_start = "2020-06-01"
   date_end = ""
   description = """
-  The [Health Data Research Organization (HDRO)](https://hdrobd.org/) is a non-profit organization dedicated to scientific research and dissemination using primary and secondary sources as well as third-party data. 
-  Responsibilities include team management, organizing and designing virtual training on different topics (Linux, Python, R and Fundamental of Biostatistics for health research).
+  The Health Data Research Organization (HDRO) is a non-profit organization dedicated to scientific research and dissemination using primary and secondary sources and third-party data. Responsibilities include team management, organizing, and designing virtual training on different topics (Linux, Python, R, and Fundamental of Biostatistics for health research).
   """
 [[experience]]
   title = "Lead Organizer & Instructor"
@@ -36,7 +35,7 @@ date_format = "Jan 2006"
   date_start = "2020-11-14"
   date_end = ""
   description = """
-  [Scientific Computing for Biologists](https://scicomforbio.github.io/) is an introductory course organized by Health Data Research Organization with applications to Health Data Science, Genomic Data Science, Bioinformatics, and more. Students will gain foundational knowledge of Python, R programming, Julia, Statistics and get practical experience in building public health and biological data analysis pipeline.
+  Scientific Computing for Biologists is an introductory course organized by Health Data Research Organization with applications to Health Data Science, Genomic Data Science, Bioinformatics, and more. Students will learn Python, R programming, Julia, Statistics and get practical experience building public health and biological data analysis pipelines.
   """
 
 
@@ -48,6 +47,6 @@ date_format = "Jan 2006"
   date_start = "2016-06-01"
   date_end = ""
   description = """
-  [Bio-Bio-1](http://biobio.one/) is a voluntary not-for-profit organization, formed by some passionate individuals in late 2008 to learn Bioinformatics for making some senses from the Enigma of Life. It also aims to spread the excitement of Research and Development by infecting the like-minded individuals (especially the young ones) through several programs (i.e.: weekly Study Circles). I was an active participant of their weekly study circle and learned a lot from them, especially I learned bioinformatics techniques with help of Python.
+  Bio-Bio-1 is a voluntary, non-profit organization formed by some passionate individuals in late 2008 to learn Bioinformatics for making some sense from the Enigma of Life. It also aims to spread the excitement of Research and Development by infecting like-minded individuals (especially the young ones) through several programs (i.e., weekly Study Circles). I was an active participant in their weekly study circle and learned a lot from them; especially, I learned bioinformatics techniques with the help of Python.
   """
 +++
