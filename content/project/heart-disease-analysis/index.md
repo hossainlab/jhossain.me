@@ -1,15 +1,15 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Datavisualization with Python"
-summary: "his is a short sequence of notes on Data Visualization for scientific work, specially in the field of data science"
+title: "Heart Disease Analysis and Prediction Using Machine Learning"
+summary: "With the dataset provided for heart analysis, we have to analyze the possibilities of a heart attack based on various features, and then the prediction from the analysis will tell us whether an individual is prone to a heart attack."
 authors: []
-tags: [Books]
-categories: [Books]
-date: 2021-04-25T00:58:17+06:00
+tags: ["Disease Detection", "ML"]
+categories: []
+date: 2021-04-29T02:38:40+06:00
 
 # Optional external URL for project (replaces project detail page).
-external_link: ""
+external_link: "https://github.com/hossainlab/Heart_Study"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

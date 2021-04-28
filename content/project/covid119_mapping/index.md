@@ -1,8 +1,8 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Mapping the Coronavirus Cases in 2020 using Python GeoPandas"
-summary: "Mapping with Geopandas"
+title: "Mapping the Coronavirus Cases"
+summary: "Mapping COVID-19 confirmed cases  with Geopandas and Matplotlib"
 authors: []
 tags: ["Health Data Science"]
 categories: []

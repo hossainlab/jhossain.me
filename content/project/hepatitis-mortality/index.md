@@ -1,15 +1,15 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: "Introduction to Numpy"
-summary: "This is a short sequence of notes on NumPy for scientific work, specially in the field of data science."
+title: "Hepatitis Mortality Prediction Using Machine Learning"
+summary: "We will assess the possibilities of hepatitis based on various features using the dataset provided for hepatitis, and the prediction from the analysis will tell us whether an individual is prone to hepatitis or not."
 authors: []
-tags: [Books]
-categories: [Books]
-date: 2021-04-25T00:53:12+06:00
+tags: ["Disease Detection", "ML"]
+categories: []
+date: 2021-04-29T02:38:57+06:00
 
 # Optional external URL for project (replaces project detail page).
-external_link: ""
+external_link: "https://github.com/hossainlab/Hepatitis_Mortality"
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

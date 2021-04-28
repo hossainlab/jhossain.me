@@ -21,34 +21,6 @@ subtitle = ""
   # Default filter index (e.g. 0 corresponds to the first `[[filter_button]]` instance below).
   filter_default = 0
   
-  [[content.filter_button]]
-  name = "All"
-  tag = "*"
-
-  [[content.filter_button]]
-  name = "Books"
-  tag = "Books"
-  
-  [[content.filter_button]]
-  name = "Public Health"
-  tag = "Public Health"
-  
-  [[content.filter_button]]
-  name = "Health Data Science"
-  tag = "Health Data Science"
-
-  [[content.filter_button]]
-  name = "ML"
-  tag = "ML"
-
-  [[content.filter_button]]
-  name = "Bioinformatics"
-  tag = "Bioinformatics"
-
-  [[content.filter_button]]
-  name = "Cheminformatics"
-  tag = "Cheminformatics"
-
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns = "2"
