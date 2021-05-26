@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 31  # Order that this section will appear.
 
-title = "Experience"
+title = "Affiliations"
 subtitle = ""
 
 # Date format for experience
@@ -27,17 +27,17 @@ date_format = "Jan 2006"
   description = """
   The Health Data Research Organization (HDRO) is a non-profit organization dedicated to scientific research and dissemination using primary and secondary sources and third-party data. Responsibilities include team management, organizing, and designing virtual training on different topics (Linux, Python, R, and Fundamental of Biostatistics for health research).
   """
+
 [[experience]]
-  title = "Lead Organizer & Instructor"
-  company = "Scientific Computing for Biologists"
-  company_url = "https://scicomforbio.github.io/"
+  title = "Founder"
+  company = "Apon - Blood for Thalassemia"
+  company_url = "https://www.facebook.com/apnon.org"
   location = "Dhaka, Bangladesh"
-  date_start = "2020-11-14"
+  date_start = "2017-06-01"
   date_end = ""
   description = """
-  Scientific Computing for Biologists is an introductory course organized by Health Data Research Organization with applications to Health Data Science, Genomic Data Science, Bioinformatics, and more. Students will learn Python, R programming, Julia, Statistics and get practical experience building public health and biological data analysis pipelines.
+  Apon is a non-profit blood donation platform lead by Health Data Research Organization. Primarily Apon is dedicated to Thalassemia patients. As we know, Thalassemia patients need 1-2 bags of blood every month. It's challenging to manage this amount of blood of their own. But if we work together, it will be easier for them. 
   """
-
 
 [[experience]]
   title = "Team Member"
