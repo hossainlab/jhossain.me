@@ -20,3 +20,4 @@ I attended B.Sc. degree under the Department of Microbiology at [Jagannath Unive
 | 07 | 2020 | [Create Interactive Dashboards with Streamlit and Python](https://www.coursera.org/account/accomplishments/certificate/E7PM4S8NJBEB) |Coursera Project Network|[Coursera](https://www.coursera.org/) |  95%| `Completed`| 
 | 08 | 2020 | [Create Interactive Dashboards with Streamlit and Python](https://www.coursera.org/account/accomplishments/certificate/E7PM4S8NJBEB) |Coursera Project Network|[Coursera](https://www.coursera.org/) |  95%| `Completed`| 
 | 09 | 2020 | [Introduction to SQL](https://learn.datacamp.com/courses/introduction-to-sql) |DataCamp|[DataCamp](https://www.datacamp.com/) |  NA| `Completed`| 
+| 100 | 2020 | [Introduction to Systematic Review and Meta-Analysis](https://www.coursera.org/learn/systematic-review) |DataCamp|[DataCamp](https://www.datacamp.com/) |  NA| `Completed`| 

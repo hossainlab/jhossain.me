@@ -57,7 +57,7 @@ description = "Health Data Science Enthusiast"
 # Enable source code highlighting? true/false
 # Documentation: https://wowchemy.com/docs/writing-markdown-latex/#highlighting-options
 highlight = true
-highlight_languages = ["r", "python", "julia", "matlab", "c++"]  # Add support for highlighting additional languages
+highlight_languages = ["r", "python", "julia", "shell"]  # Add support for highlighting additional languages
 # highlight_style = "github"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
 
 # Enable LaTeX math rendering? true/false
@@ -93,7 +93,7 @@ email = "b150605021@mib.jnu.ac.bd"
 
 # Address
 # For country_code, use the 2-letter ISO code (see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 )
-address = {street = "33/3A", city = "Dhaka", region = "Azimpur", postcode = "1211", country = "Bangladesh", country_code = "BD"}
+address = {street = "7/A", city = "Dhaka", region = "Azimpur", postcode = "1211", country = "Bangladesh", country_code = "BD"}
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.

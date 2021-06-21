@@ -25,20 +25,48 @@ url = "#projects"
 weight = 4
 
 [[main]]
-  name = "Education"
+  name = "MOOCs"
   url = "/education"
   weight = 5 
 
 [[main]]
 name = "Notes"
-url = "/notes"
+identifier = "notes"
 weight = 6
+[[main]]
+  name = "Introduction to Python"
+  parent = "notes"
+  url = "https://hossainlab.github.io/pandas/"
+  weight = 1
 
+[[main]]
+  name = "Introduction to NumPy"
+  parent = "notes"
+  url = "https://hossainlab.github.io/numpy/"
+  weight = 2
 
-# [[main]]
-# name = "Resources"
-# url = "/resources"
-# weight = 7
+[[main]]
+  name = "Data Analysis with Pandas"
+  parent = "notes"
+  url = "https://hossainlab.github.io/pandas/"
+  weight = 3
+
+[[main]]
+  name = "Data Visualization with Python"
+  parent = "notes"
+  url = "https://hossainlab.github.io/pandas/"
+  weight = 4 
+
+[[main]]
+  name = "Notes for Learning R"
+  parent = "notes"
+  url = "https://www.rpubs.com/jhossain"
+  weight = 5
+
+[[main]]
+name = "Resources"
+url = "/resources"
+weight = 7
 
 
 # [[main]]

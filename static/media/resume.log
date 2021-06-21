@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.24)  17 MAY 2021 19:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.22)  28 MAY 2021 06:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -745,25 +745,24 @@ Package hyperref Warning: Suppressing link with empty target on input line 63.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 
-Package hyperref Warning: Suppressing link with empty target on input line 150.
+Package hyperref Warning: Suppressing link with empty target on input line 143.
 
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 155.
+Package hyperref Warning: Suppressing link with empty target on input line 148.
 
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 191.
+Package hyperref Warning: Suppressing link with empty target on input line 168.
 
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 200.
+Package hyperref Warning: Suppressing link with empty target on input line 177.
 
 
-[2]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-16.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+91.
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -772,23 +771,23 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
  
 AED: lastpage setting LastPage
-[3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
+[2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
  (./resume.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 225.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 225.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
 Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: D92A43C78E2386A1CFC6BFD537DCFC5F;1336.
+(rerunfilecheck)             Checksum: E57F7900EE3A656D6BD597B8B52C00B6;1198.
  ) 
 Here is how much of TeX's memory you used:
- 14635 strings out of 483140
- 221955 string characters out of 5965151
- 514104 words of memory out of 5000000
- 29347 multiletter control sequences out of 15000+600000
- 582279 words of font info for 100 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 51i,16n,49p,795b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 14628 strings out of 481239
+ 221892 string characters out of 5920377
+ 520913 words of memory out of 5000000
+ 29590 multiletter control sequences out of 15000+600000
+ 582149 words of font info for 98 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 51i,16n,49p,795b,453s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texlive/texmf-dist
 /fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fon
 tawesome/fontawesometwo.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/f
@@ -797,10 +796,10 @@ sfonts/cm/cmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on resume.pdf (3 pages, 132778 bytes).
+Output written on resume.pdf (2 pages, 129287 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 500000)
- 23641 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 101 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
+ 23633 words of extra memory for PDF output out of 24883 (max. 10000000)
 
